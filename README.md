@@ -30,3 +30,13 @@
 * `br` 줄바꿈태그(블록 태그 내에서만 사용해야 한다)(inline)
 * `strong` 경고 등 심각성이 있는 강조표시태그(블록 내 사용,제목(h)사용안함)(inline)
 * `em` 문맥 내 강조표시 태그(블록 내 사용,제목(h)사용안함)(inline)
+* `blockquote`
+* `q`
+* `blockquote, q의 cite 속성`
+* `sup`, `sub`
+* `code`
+* `mark`
+* `&lt;`, `&gt;` , `&copy;`
+* `hr`
+* `address`
+* `del`, `s`
