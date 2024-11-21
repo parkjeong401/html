@@ -1,0 +1,47 @@
+.profile {}
+.profile h1 {
+    font-size:3.81rem;
+    font-weight:400;
+    line-height:1.2;
+}
+.profile .ambition_g { 
+    font-size:2.5rem;
+    line-height:1.2;
+    font-weight:400;
+    letter-spacing:-0.05rem;
+}
+.profile .ambition_g .photo {}
+.profile .ambition_g .photo img {}
+.profile .ambition_g .ambition {}
+.profile .ambition_g .ambition em {
+    color: lightblue;
+    font-weight: 700;
+}
+.profile h2 {
+    font-size:1.94rem;
+    font-weight:700;
+    letter-spacing:-0.03rem;
+    line-height:1.2;
+}
+.profile .basic {}
+.profile .basic li {
+    font-size:1.0rem;
+    font-weight:500;
+    line-height:1.5;
+}
+.profile .experience {}
+.profile .experience li {
+    font-size:1.0rem;
+    font-weight:500;
+    line-height:1.5;
+}
+.profile .experience li .date {}
+.profile .experience li .name {}
+.profile .license {}
+.profile .license li {
+    font-size:1.0rem;
+    font-weight:500;
+    line-height:1.5;
+}
+.profile .license li .date {}
+.profile .license li .name {}
