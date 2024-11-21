@@ -1,0 +1,6 @@
+body,html,h1,h2,h3,h4 
+p,div,dl,dt,dd,ul,ol,li,video,blockquote,hr,a, address,
+span,em,img,strong,sup,sub,del,s,q,mark,code {
+    font-size:16px; line-height:1.0; font-weight:normal; margin: padding:0; font-style:normal;}
+ol,li,ul {list-style:none;}
+a {color:#000; text-decoration:none;}
