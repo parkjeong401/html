@@ -40,6 +40,7 @@
 }
 #wrap main .path img {
     margin:0 12px;
+    position: relative; top:3.2px;
 }
 #wrap main h1 {
     margin:44px 0 49px 0;
@@ -78,7 +79,6 @@
     line-height:1.5;
 }
 #wrap main .bg .goal_contents {
-
     margin-bottom:60px;
 }
 #wrap main .bg .goal_contents li {
@@ -105,11 +105,16 @@
     font-weight:500; margin-top: 10px; color:#fff;
 }
 #wrap main .bg .goal_contents li:nth-child(2) span{color:#000;}
-#wrap main .bg .strategy_contents {}
+#wrap main .bg .strategy_contents {
+    /* overflow:hidden; */
+    /* display:inline-block; */
+    width:max-content; margin:0 auto;
+}
+#wrap main .bg .strategy_contents::after{clear: both; content:''; display:block;}
 #wrap main .bg .strategy_contents dl {
     background-color: #eee;
     width:180px; height:180px;
-    display:inline-block;
+    float: left;
     border-radius:50%;
     margin-left:-10px;
     /* padding-top:47.5px; */

@@ -1,13 +1,15 @@
-#wrap {}
-#wrap header {}
+#wrap {background-color: aqua;}
+#wrap header {background-color: yellow;}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
-#wrap header nav {}
+#wrap header nav {background-color: gray;}
 #wrap header nav ul {}
-#wrap header nav ul li {}
+#wrap header nav ul li {
+    font-size:1.13rem; font-weight:600;
+}
 #wrap header nav ul li a {}
-#wrap header .right_menu {}
+#wrap header .right_menu {background-color: lime;}
 #wrap header .right_menu > a {}
 #wrap header .right_menu ul {}
 #wrap header .right_menu ul li {}
@@ -15,41 +17,193 @@
 #wrap header .right_menu ul li img {}
 /* ============메인시작============== */
 #wrap main {}
-#wrap main .path {}
-#wrap main .path a {}
-#wrap main .path img {}
-#wrap main .path span {}
-#wrap main h1 {}
-#wrap main p {}
-#wrap main .bg {}
-#wrap main .bg .food {}
-#wrap main .bg .food p {}
-#wrap main .bg .food p img {}
-#wrap main .bg .food .food_business {}
-#wrap main .bg .food .food_business .number {}
-#wrap main .bg .food .food_business h2 {}
-#wrap main .bg .food .food_business p {}
-#wrap main .bg .store_business {}
-#wrap main .bg .store_business .store {}
-#wrap main .bg .store_business .store .number {}
-#wrap main .bg .store_business .store h2 {}
-#wrap main .bg .store_business .store p {}
-#wrap main .bg .store_business .store p img {}
-#wrap main .bg .concession {}
-#wrap main .bg .concession p {}
-#wrap main .bg .concession p img {}
-#wrap main .bg .concession .service_business {}
-#wrap main .bg .concession .service_business .number {}
-#wrap main .bg .concession .service_business h2 {}
-#wrap main .bg .concession .service_business p {}
-#wrap main .bg .export_business {}
-#wrap main .bg .export_business p {}
-#wrap main .bg .export_business p img {}
-#wrap main .bg .export_business .export {}
-#wrap main .bg .export_business .export h2 {}
-#wrap main .bg .export_business .export p {}
+#wrap main .path {
+    background-color: #f9f9f9;
+    padding:15px 80px; text-align:right;
+}
+#wrap main .path a {
+    font-size:0.88rem;
+}
+#wrap main .path span {
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+#wrap main .path img {
+    margin:0 12px;
+}
+#wrap main h1 {
+    letter-spacing:-0.02rem;
+    margin:44px 0 49px 0;
+    text-align:center;
+    font-size:3.13rem; font-weight: 700;
+}
+#wrap main > p {
+    letter-spacing:-0.02rem;
+    font-size:1.19rem;
+    font-weight:500;
+    text-align:center;
+    color:#555555;
+    margin-bottom:47px;
+}
+#wrap main .bg {
+    background-color:coral;
+    padding:100px 0;
+}
+#wrap main .bg > .food {background-color:aqua;
+    width:1140px;
+    margin:0 auto;
+}
+#wrap main .bg > .food > p {
+    width:658px;
+    display:inline-block;
+}
+#wrap main .bg > .food p img {}
+#wrap main .bg > .food .food_business {
+    width:360px;
+    display:inline-block;
+    margin-left:27px;
+}
+#wrap main .bg > .food .food_business .number {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.02rem;
+}
+#wrap main .bg > .food .food_business h2  {
+    letter-spacing:-0.02rem;
+    font-size: 1.88rem;
+    font-weight:600;
+}
+#wrap main .bg >.food .food_business p {
+    letter-spacing:-0.02rem;
+    color:#555555;
+    margin-top:30px;
+    line-height:1.7rem;
+}
+/* ===================종합식품=========== */
+#wrap main .bg .store_business {
+    background-color:lightgreen;
+    width:1140px; margin: 0 auto;
+}
+#wrap main .bg > .store_business .store {
+    display:inline-block;
+    width:384px;
+    padding:84px;
+}
+#wrap main .bg > .store_business .store .number {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+}
+#wrap main .bg > .store_business .store h2 {
+    letter-spacing:-0.02rem;
+    font-size: 1.88rem;
+    font-weight:600;
+}
+#wrap main .bg > .store_business  .store p:nth-child(3) {
+    letter-spacing:-0.02rem;
+    color:#555555;
+    margin-top:30px;
+    line-height:1.7;
+}
+#wrap main .bg > .store_business > p {
+    width:649px;
+    display:inline-block;
+    padding:105px;
+}
+/* ==============점포사업================= */
+#wrap main .bg > .concession {background-color: beige;
+    width:1140px;
+    margin:0 auto;
+}
+#wrap main .bg > .concession > p {
+    display:inline-block;
+}
+#wrap main .bg > .concession p img {}
+#wrap main .bg > .concession .concession_business {
+    width:360px;
+    display:inline-block;
+    margin-left:27px;
+}
+#wrap main .bg > .concession .concession_business .number {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.02rem;
+}
+#wrap main .bg > .concession .concession_business h2 {
+    letter-spacing:-0.02rem;
+    font-size: 1.88rem;
+    font-weight:600;
+}
+#wrap main .bg > .concession .concession_business p {
+    letter-spacing:-0.02rem;
+    color:#555555;
+    margin-top:30px;
+    line-height:1.7rem;
+}
+/*==================== 컨세션사업======================== */
+#wrap main .bg .service_business {
+    background-color:lightgreen;
+    width:1140px; margin: 0 auto;
+}
+#wrap main .bg > .service_business .service {
+    display:inline-block;
+    width:384px;
+    padding:84px;
+}
+#wrap main .bg > .service_business .service .number {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+}
+#wrap main .bg > .service_business .service h2 {
+    letter-spacing:-0.02rem;
+    font-size: 1.88rem;
+    font-weight:600;
+}
+#wrap main .bg > .service_business .service p:nth-child(3) {
+    letter-spacing:-0.02rem;
+    color:#555555;
+    margin-top:30px;
+    line-height:1.7;
+}
+#wrap main .bg > .service_business > p {
+    width:649px;
+    display:inline-block;
+    padding:105px;
+}
+/* 서비스 */
+#wrap main .bg > .export_business {background-color:aqua;
+    width:1140px;
+    margin:0 auto;
+}
+#wrap main .bg > .export_business > p {
+    width:658px;
+    display:inline-block;
+}
+#wrap main .bg > .export_business p img {}
+#wrap main .bg > .export_business .export {
+    width:360px;
+    display:inline-block;
+    margin-left:27px;
+}
+#wrap main .bg > .export_business .export .number {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.02rem;
+}
+#wrap main .bg > .export_business .export h2  {
+    letter-spacing:-0.02rem;
+    font-size: 1.88rem;
+    font-weight:600;
+}
+#wrap main .bg >.export_business .export p {
+    letter-spacing:-0.02rem;
+    color:#555555;
+    margin-top:30px;
+    line-height:1.7rem;
+}
 /* ==============끝시작======================= */
-#wrap footer {}
+#wrap footer {background-color: aqua;}
 #wrap footer .ft_left {}
 #wrap footer .ft_left .ft_menu {}
 #wrap footer .ft_left .ft_menu a {}
