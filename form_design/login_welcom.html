@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 링크연결 시 항상 제일 위에 먼저 넣은 후 링크연결 할 것!-->
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/login_w.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div class="login_page">
+            <h1>Welcome back</h1>
+            <p>Welcome back! Please enter your details.</p>
+            <form action="#" method="post" id="form">
+                <fieldset>
+                    <legend>login</legend>
+                    <dl>
+                        <dt>Email</dt>
+                        <dd><input type="text" name="user_email" placeholder="Enter your email or id" required></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" name="user_pw" placeholder="Enter your password" required></dd>
+                        <dt>Forgot password</dt>
+                        <dd>
+                            <button type="button" class="login_btn">Login</button>
+                            <button type="button" class="google_btn">Sign in with Google</button>
+                        </dd>
+                    </dl>
+                    <p>Don't have on account?<a href="#">Sign up for free</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

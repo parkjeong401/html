@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login | spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/path14.png" type="image/x-icon">
+    <link rel="icon" href="./images/path14.png" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"/>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <style>
+        /*속성선택자연습용(주로 input에서 많이 사용)*/
+        /*input[name*=user] {background-color:yellow;}*/
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/Logo.svg.png" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#" class="active">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!--SIGN IN 클릭 시 출력 내용-->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forgot_pw">Forget Password?</a>
+            </form>
+            <!--SIGN UP 클릭 시 출력 내용-->
+            <form action="#" method="post" id="upFrm">
+                <h1>ID</h1>
+                <div class="id_container">
+                    <ul>
+                        <li><input type="text" name="user_id_creat" required></li>
+                        <li><button type="button" class="duplicate_check_btn">duplicate check</button></li>
+                    </ul>
+                    <p class="notice1">8~12 letters / English letters (number combinations possible)</p>
+                </div>
+                <h1>Password</h1>
+                <div class="pw_container">
+                    <ul>
+                        <li><input type="password" name="user_pw_creat" required></li>
+                        <li><input type="password" name="pw_creat" placeholder="verifypassword" required></li>
+                    </ul>
+                    <p class="notice2">8~20 letters (combination of 2 or more of en letters,number)</p>
+                </div>
+                <h1>Email</h1>
+                <div class="email_container">
+                    <ul>
+                        <li><input type="email" name="user_mail" placeholder="mail" required></li>
+                        <li>@</li>
+                        <li>
+                            <select name="choice">
+                                <option value="naver.com">naver.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="kakao.com">kakao.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <p class="notice3">Please enter your email address accurately.</p>
+                </div>
+                <h1>Phone number</h1>
+                <div class="phone_container">
+                    <ul>
+                        <li><input type="text" name="user_phone" placeholder="phone" required></li>
+                        <li><button type="button" class="certification_btn">certification</button></li>
+                    </ul>
+                </div>
+                <p class="btn"><button type="button" class="join_btn">Join</button></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

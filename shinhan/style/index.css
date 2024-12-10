@@ -1,19 +1,19 @@
-#wrap {background-color:brown;}
+#wrap {}
 #wrap header {
     background-color:rgba(0,0,0,0.1);
     padding:21px 80px;
     /*header는 모든 사이트에서 높이 고정되는 경우가 90%이상이다.*/
     height:80px;
+    position:fixed; left:0; top:0; width:100%; /* fixed일 경우 너비를 입력해줘야 함 */
+    z-index:999;
 }
 #wrap header h1 {
-    background-color:aqua;
     float:left; 
     padding-top:3px;
 }
 #wrap header h1 a {}
 #wrap header h1 a img {}
 #wrap header nav {
-    background-color:coral;
     float:right;
 }
 #wrap header nav ul {
@@ -41,36 +41,219 @@
 /*=====메인 1~4행 공통선택자=======*/
 #wrap main .container {background-color:beige;}
 #wrap main .container .contents {
-    background-color:hotpink;
+    width:1440px; height:100vh; margin:0 auto;
+    background-color:rgba(255,255,255,0.3); /* 제거용 */
 }
 #wrap main .container .contents .txt {
-    background-color:aqua;
+    background-color:orange;
 }
-#wrap main .container .contents .txt h1 {}
-#wrap main .container .contents .txt h1 span {}
-#wrap main .container .contents .txt p {}
+#wrap main .container .contents .txt .sub_title {
+    font-size:1.56rem; font-weight:600;
+    letter-spacing:-0.02rem;
+    text-transform:uppercase;
+    color:#fff;
+}
+#wrap main .container .contents .txt h1 {
+    line-height:1.3; font-size:4.38rem;
+    font-weight:700;  color:#fff;
+}
+#wrap main .container .contents .txt h1 span {color:#5EE1FF;}
+#wrap main .container .contents .txt h1+p {
+    line-height:1.5; font-size:1.56rem;
+    font-weight:500; letter-spacing:-0.02rem;
+    margin:20px 0; color:#fff;
+}
 /*======메인 1행 결제편리함=======*/
 #wrap main .pay {
     background-image:url(../images/row1.jpg);
+    background-size:cover;
 }
-#wrap main .pay .contents {}
-#wrap main .pay .txt {}
+#wrap main .pay .contents {position: relative;}
+#wrap main .pay .txt {
+    padding-top:231px;
+}
 #wrap main .pay .contents .txt h1 {}
-#wrap main .pay .contents .txt h1 span {}
-#wrap main .pay .contents .txt p {}
-#wrap main .pay .contents .txt .bnr_btn_wrap {
-    background-color:purple;
+#wrap main .pay .contents .txt h1 span {
+    font-weight:700;
+}
+#wrap main .pay .contents .txt p {
+    color:#fff;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap {}
+#wrap main .pay .contents .txt .bnr_btn_wrap >* {
+    margin-right:10px;
 }
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {
+    display:inline-block;
+    width:100px; height:2px;
+    background-color:rgba(255,255,255,0.3);
+    position:relative; bottom:12px;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress:nth-child(4) {
+    background-color:rgba(255,255,255);
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
 #wrap main .pay .contents .scroll {
-    background-color:brown;
+    position:absolute; right:0; bottom:43px;
 }
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    line-height:1.3px; color:#fff;
+    font-size:0.88rem; font-weight:500;
+    text-transform:uppercase; /* 모두 대문자 */
+    position: relative; top:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display:inline-block;
+    border-radius:6px; 
+    height:30px; width:12px;
+    background-color:#555;
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display:inline-block;
+    border-radius:50%;
+    height:8px; width:8px;
+    background-color:#fff;
+    position:relative; top:-4px; left:2px; /* margin으로 해도 맞음 */
+}
+/* =============결제편리함 끝================= */
+#wrap main .service {
+    background-color:yellow;
+    background-image:url(../images/row2.jpg);
+    background-size:cover;
+}
+#wrap main .service .contents {position:relative; padding-top:311px;
+}
+#wrap main .service .contents .txt {
+    float:left;
+}
+#wrap main .service .contents .txt h1 {
+    margin-top:20px;
+}
+#wrap main .service .contents .txt p {}
+/* ====pg란?====== */
+#wrap main .service .contents .service_wrap {
+    float:right;
+}
+#wrap main .service .contents .service_wrap .card {background-color:aqua;
+    background-image:url(../images/card_bg1.jpg);
+    top: 157px; 
+    padding-top:200px;
+    background-size:100%;
+    background-position:center top;
+    margin-right: 22px;
+    display:inline-block;
+    border-radius:5%;
+    overflow: hidden;
+}
+#wrap main .service .contents .service_wrap .card .contents_wrap {
+    background-color:#fff; width:331px; 
+    padding:30px 20px 30px 20px;
+}
+#wrap main .service .contents .service_wrap .card .contents_wrap h2 {
+    font-size:1.56rem; font-weight:600;
+    letter-spacing:-0.02rem; margin-bottom:30px;
+}
+#wrap main .service .contents .service_wrap .card .contents_wrap p {
+    color:#555; line-height:1.5; letter-spacing:-0.02rem;
+    margin:0 0 35px 0;
+}
+#wrap main .service .contents .service_wrap .card .contents_wrap a {
+    display:block;
+    overflow:hidden;
+    border-top:1px solid #000;
+    padding:10px 0;
+}
+#wrap main .service .contents .service_wrap .card .contents_wrap a span {
+    font-weight:600; line-height:1.5; letter-spacing:-0.02rem;
+    float:left;
+}
+#wrap main .service .contents .service_wrap .card .contents_wrap a img {
+    float:right;
+}
+/* =======신용카드====== */
+#wrap main .service .contents .service_wrap .virtual_account {
+    background-color: yellow;
+    top: 311px; 
+    padding-top:200px;
+    background-size:100%;
+    background-position:center top;
+    display:inline-block;
+    background-image:url(../images/card_bg2.jpg);
+    border-radius:5%;
+    overflow:hidden;
+    opacity:0.6;
+}
+#wrap main .service .contents .service_wrap .virtual_account .contents_wrap {
+    background-color:#fff; width:331px; 
+    padding:30px 20px 30px 20px;
+}
+#wrap main .service .contents .service_wrap .virtual_account .contents_wrap h2 {
+    font-size:1.56rem; font-weight:600;
+    letter-spacing:-0.02rem; margin-bottom:30px;
+}
+#wrap main .service .contents .service_wrap .virtual_account .contents_wrap p {
+    color:#555; line-height:1.5; letter-spacing:-0.02rem;
+    padding-bottom:35px;
+}
+#wrap main .service .contents .service_wrap .virtual_account .contents_wrap a {
+    display:block;
+    overflow:hidden;
+    border-top:1px solid #000;
+    padding:10px 0;
+}
+#wrap main .service .contents .service_wrap .virtual_account .contents_wrap span {
+    font-weight:600; line-height:1.5; letter-spacing:-0.02rem;
+    float:left;
+}
+#wrap main .service .contents .service_wrap .virtual_account .contents_wrap img {
+    float:right;
+}
+/* =======================3행 차별화 서비스================================= */
+#wrap main .different {
+    background-image:url(../images/row3.jpg);
+    background-size:cover;
+}
+#wrap main .different .contents {}
+#wrap main .different .contents .txt {
+    text-align:center; padding-top:162px;
+}
+#wrap main .different .contents .txt .sub_title {}
+#wrap main .different .contents .txt .sub_title h1 {}
+#wrap main .different .contents .txt .sub_title h1 span {}
+#wrap main .different .contents .txt .sub_title h1+p {} /* +는 h1바로 다음에오는p만 잡는 것. ~은 h1뒤의 p를 모두 잡는것 */
+#wrap main .different .contents ol {
+    overflow:hidden;
+}
+#wrap main .different .contents ol li {
+    width:290px; height:290px; border-radius:50%;
+    border:20px solid rgba(255,255,255,0.5);
+    position: relative;/* after 가상요소의 부모설정 */
+    float: left; margin-right:93.33px;
+    text-align:center;
+}
+#wrap main .different .contents ol li::after {
+    content:'';
+    display:block;
+    background-color:#fff;
+    width:250px; height:250px; border-radius:50%;
+    position:absolute; left:0; top:0; z-index:60;
+}
+#wrap main .different .contents ol li:nth-child(4) {margin:0;} /* margin초기화를 위해 */
+#wrap main .different .contents ol li > * {
+    position:relative; z-index:75;
+}
+#wrap main .different .contents ol li .num {
+    padding:5px 20px; background-color:#5E91FF;
+    border-radius:20%;
+    margin:67px 0px 10px;
+    display:inline-block;
+    font-size:1.56rem; font-weight:600; color:#fff;
+}
+#wrap main .different .contents ol li h2 {
+    line-height:1.3; font-size:1.56rem; font-weight:600; letter-spacing:-0.02em;
+}

@@ -1,0 +1,63 @@
+#wrap {}
+#wrap .login_page {
+    margin:0 auto; width:500px;
+}
+#wrap .login_page h1 {
+    padding-top:84px; 
+    font-size:4.38rem; font-weight:900;
+    letter-spacing:-0.02em;
+}
+#wrap .login_page p {
+    font-size:1.25rem; letter-spacing:-0.02rem;
+    margin-top:25px; 
+}
+#wrap .login_page #form {}
+#wrap .login_page #form fieldset {}
+#wrap .login_page #form fieldset legend {}
+#wrap .login_page #form fieldset dl {}
+#wrap .login_page #form fieldset dl dt{
+    margin-top:57px; font-size:1.88rem;
+    font-weight:700; letter-spacing:-0.02rem;
+    padding-bottom:32px; 
+}
+#wrap .login_page #form fieldset dl dt:nth-child(3){
+    margin-top:38px;
+}
+#wrap .login_page #form fieldset dl dt:nth-child(5){
+    margin-top:38px;
+    border-radius:5%;
+}
+#wrap .login_page #form fieldset dl dd {
+    overflow:hidden;
+}
+#wrap .login_page #form fieldset dl dd input[name=user_email] {
+    letter-spacing:-0.02rem; #AAA;
+    border:1px solid #AAA; width:500px;
+    padding:15px; border-radius:10px;
+}
+#wrap .login_page #form fieldset dl dd input[name=user_pw] {
+    letter-spacing:-0.02rem; #AAA;
+    border:1px solid #AAA; width:500px;
+    padding:15px; border-radius:10px;
+}
+#wrap .login_page #form fieldset dl button.login_btn {
+    display:block; border:1px solid #AAA;
+    width:500px; background-color:#222;
+    font-weight:700; letter-spacing:-0.02rem;
+    color:#fff; margin-bottom:18px; padding:15px; 
+    border-radius:10px;
+}
+#wrap .login_page #form fieldset dl button.google_btn {
+    border:1px solid #AAA;
+    width:500px; background-color:#fff;
+    font-weight:700; letter-spacing:-0.02rem;
+    color:#222; margin-bottom:18px; padding:15px; 
+    border-radius:10px;
+}
+#wrap .login_page #form fieldset p {
+    text-align: center; 
+    padding:62px;
+}
+#wrap .login_page #form fieldset p a {
+    font-weight:700; letter-spacing:-0.02rem;
+}
