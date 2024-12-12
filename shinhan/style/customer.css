@@ -1,0 +1,177 @@
+body {}
+#wrap {
+    width:1920px; height:1518px;
+}
+#wrap header { 
+    padding:0 80px; height:80px; overflow: hidden;
+}
+#wrap header h1 {float:left; padding-top:24px;}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    float:right;
+    padding-top:21px; 
+}
+#wrap header nav ul {}
+#wrap header nav ul li {
+    float:left; margin:10px 0 0 60px;
+}
+#wrap header nav ul li:first-child {margin-left:0;}
+#wrap header nav ul li a {
+    font-size:1.13rem; font-weight:600; letter-spacing:-0.01em;
+}
+#wrap header nav ul .developer_center a {
+    color:#0046FF; border:1px solid #0046FF;
+    padding:10px 20px;
+    border-radius:20px; 
+}
+#wrap main {}
+#wrap main .title_bnr{
+    text-align:center;
+    background-image:url(../images/customer/title.jpg);
+    background-size:cover;
+    height:300px;  padding:98.5px 0 0;
+    position:relative;
+}
+/*원본 사진과 다르게 배경이 어둡거나 발게 설정된 경우는 사진이 적용된 부모 요소기준 마지막 자식위치에 가상자식을 생성하여 반투명한 배경색을 적용한 경우이다.*/
+#wrap main .title_bnr::after {
+    content:''; display:block;
+    width:100%; height:300px;
+    background-color:rgba(0,0,0,0.6);
+    position:absolute; left:0; top:0; z-index:10;
+}
+#wrap main .title_bnr h1 {
+    font-size:3.0rem; font-weight:700; letter-spacing:-0.02em;
+    color:#fff; position:relative; z-index:20;
+}
+#wrap main .title_bnr p {
+    font-size:1.56rem;
+    font-weight:600;
+    letter-spacing:-0.02em; color:#fff;
+    margin-top:30px;
+    position:relative; z-index:20;
+}
+#wrap main .tab_menu {
+    text-align:center;
+    margin-top:100px; 
+}
+#wrap main .tab_menu a {
+    margin-right:12px; border:1px solid #ccc;
+    border-radius:20px; padding:12px 32px;
+    font-weight:600; font-size:1.13rem; letter-spacing:-0.02em;
+    background-color:#fff; display:inline-block;
+}
+#wrap main .tab_menu a:last-child {margin:0;}
+#wrap main .tab_menu .active {
+    background-color:#0046FF; color:#fff;
+    border:0;
+}
+#wrap main .tab_contaniner {
+    margin:10px auto 0;
+    width:720px;
+}
+/*====================신용,가상,계좌 내용그룹*/
+/*서브페이지 기준 로그인, 회원가입, 설문조사, 게시판 등으로 form위주로 구성된 페이지일 경우 form은 너비가 넓을 수록 디자인이 시각적으로 보기 좋지 않아 실제 사이트 너비보다 작게 사용하는 경우가 많음*/
+#wrap main .tab_contaniner #creaditCarFrm {}
+#wrap main .tab_contaniner #creaditCarFrm {}
+#wrap main .tab_contaniner #creaditCarFrm {}
+/* ===================신용카드 탭 활성화 내용*/
+#wrap main .tab_contaniner #creaditCarFrm {}
+#wrap main .tab_contaniner #creaditCarFrm dl {}
+#wrap main .tab_contaniner #creaditCarFrm dl dt {
+    font-size:1.13rem; font-weight:600; letter-spacing:-0.02em;
+    margin-bottom:12px;
+}
+#wrap main .tab_contaniner #creaditCarFrm dl dt:nth-child(2) {}
+#wrap main .tab_contaniner #creaditCarFrm dl dt:nth-child(3) {}
+#wrap main .tab_contaniner #creaditCarFrm dl dd {
+    margin:0 0 35px; position: relative;
+}
+#wrap main .tab_contaniner #creaditCarFrm dl dd input[name^=approval],
+#wrap main .tab_contaniner #creaditCarFrm dl dd input[name^=payment] {
+    padding:15px 20px; width:100%;
+    border-radius:5px; color:#000;
+}
+#wrap main .tab_contaniner #creaditCarFrm dl dd input [type=date]::placeholder {color: #fff;}
+#wrap main .tab_contaniner #creaditCarFrm dl dd input[name$=payment_date] {
+    background:#fff url(../images/customer/calendar_month.png) no-repeat 20px center; 
+    padding-left:55px;
+}
+#wrap main .tab_contaniner #creaditCarFrm dl dd input[name$=payment_date]::-webkit-calendar-picker-indicator {
+    background:none; position:absolute; width:100%;
+}
+/*input type 중 달력모양 없애는 속성은 ::-webkit-calendar-picker-indicator*/
+#wrap main .tab_contaniner #creaditCarFrm ul {
+    padding-top:25px; 
+}
+#wrap main .tab_contaniner #creaditCarFrm ul li {
+    background-image:url(../images/customer/kid_star.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+    color:#888; font-size:0.81rem; letter-spacing:-0.05em;
+    padding-left:18px; margin-bottom:16px; 
+    /*white-space:nowrap 줄바꿈 안함,white-space:wrap 줄바꿈 함*/
+}
+#wrap main .tab_contaniner #creaditCarFrm ul li:last-child {margin:0;}
+#wrap main .tab_contaniner #creaditCarFrm h2 {
+    margin-top:25px; padding:12px 0;
+    font-size:1.13rem; letter-spacing:-0.02em; font-weight:600;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box {
+    padding:0 30px 0 20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    width:720px; height:238px;
+    overflow:auto;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box h3 {
+    font-size:0.88rem; font-weight:600; letter-spacing:-0.02em;
+    margin:0 0 20px; padding:20px 0;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box p {
+    margin:0 0 20px; font-size:0.88rem; letter-spacing:-0.02em;
+    color:#888; line-height:1.4;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box h4 {
+    font-size:0.88rem; font-weight:600; letter-spacing:-0.02em;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box .info {
+    margin:16px 0; 
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box .info tbody {}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box .info tbody tr {
+    border:1px solid #aaa; border-left:0; border-right:0;
+    padding:15px 0 15px 15px;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box .info tbody tr th {
+    border:1px solid #aaa; border-left:0; padding:15px 0 15px 15px; width:150px;
+    font-weight:500; font-size:0.88rem; letter-spacing:-0.02em;
+}
+#wrap main .tab_contaniner #creaditCarFrm .consent_box .info tbody tr td {padding:15px 0 15px 15px; width:520px; line-height:1.3;}
+#wrap main .tab_contaniner #creaditCarFrm .all_agree_box {
+    margin:20px;
+}
+#wrap main .tab_contaniner #creaditCarFrm .all_agree_box input[value*=all] {}
+/*input radio,checkbox는 css개별 디자인이 불가능하기때문에 항상 input의 형제가 되는
+또다른 요소를 생성해서(label, span 등) 배경이미지로 연결해야 함*/
+/*input형제요소를 생성했다면 그 형제요소선택자는 input 비할성화 배경이미지를 가지고 input:checked 상태선택자를 활용하여 선택됐을 시 활성화 배경이미지로 변경해줌*/
+#wrap main .tab_contaniner #creaditCarFrm .all_agree_box input[value*=all]:checked+label {
+    background-image:url(../images/customer/check_box.png);
+}
+#wrap main .tab_contaniner #creaditCarFrm .all_agree_box label {
+    padding-left:24px; 
+    background-image:url(../images/customer/check_box_n.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+}
+#wrap main .tab_contaniner #creaditCarFrm .btn {
+    text-align:center;
+    margin:100px 0;
+}
+#wrap main .tab_contaniner #creaditCarFrm .btn .about_btn {
+    background-color:#0046FF; padding:16px 0;
+    width:160px; border-radius:8px;
+    color:#fff; font-size:1.13rem; font-weight:700; 
+    letter-spacing:-0.02em;
+    display:inline-block;
+}

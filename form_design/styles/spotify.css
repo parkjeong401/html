@@ -2,6 +2,7 @@ body {background-color:#222;}
 main {
     margin:97px auto 0; width:500px;
     /*부모의 너비값 고정이 되었을 경우 그 자식,자손 중 블록에 해당하는 모든요소는 부모의 너비만큼(w:100%)자동으로 크기를 인식하기 때문에 꼭 필요한 경우가 아니라면 너비를 입력하지 않아도 된다.*/
+    padding:0 0 100px;
 }
 main h1 {text-align:center; margin:0 0 87px;}
 main h1 a {}
@@ -75,32 +76,31 @@ main .tab_wrap #upFrm {
     background-color:aqua;
 }
 main .tab_wrap #upFrm h1 {
-    text-align:left; padding:29px 0;
-    font-size:1.25rem; letter-spacing:-0.02rem;
-    color:#fff; font-weight:500;
-    margin-bottom:14px;
+    text-align:left; font-size:1.13rem; letter-spacing:-0.02em;
+    font-weight:500; color:#fff; padding:14px 0;
+    margin:57px 0;
 }
 main .tab_wrap #upFrm .id_container {
     background-color:yellow;
 }
-main .tab_wrap #upFrm .id_container ul {}
+main .tab_wrap #upFrm .id_container ul {
+    
+}
 main .tab_wrap #upFrm .id_container ul li {}
 main .tab_wrap #upFrm .id_container ul li input[name=user_id_creat]{
     background-color:#fff;
-    width:325px; padding:10px 0;
+    padding:10px; width:325px; height:44px;
     border-radius:15.2px;
     float:left;
 }
 main .tab_wrap #upFrm .id_container ul li .duplicate_check_btn {
-    background-color:#1ED760;
-    width:161px;
-    padding:9px 17px 9px 17px;
+    background-color:#1ED760; color:#fff;
+    float:right; width:161px; height:44px;
+    font-size:1.13rem; letter-spacing:-0.02em;
     border-radius:15.2px; 
-    float:right;
-    color:#fff; font-size:1.13rem; letter-spacing:-0.02rem;
 }
 main .tab_wrap #upFrm .id_container .notice1 {
-    color:#fff; font-size:0.75rem; letter-spacing:-0.02rem;
+    color:#fff; font-size:0.75rem; letter-spacing:-0.02em;
     margin-top:10px;
 }
 main .tab_wrap #upFrm .pw_container {
@@ -109,28 +109,60 @@ main .tab_wrap #upFrm .pw_container {
 main .tab_wrap #upFrm .pw_container ul {}
 main .tab_wrap #upFrm .pw_container ul li {}
 main .tab_wrap #upFrm .pw_container ul li input[name=user_pw_creat]{
-    background-color:beige;
+    background-color:#fff;
+    padding:10px; width:490px; height:44px;
+    border-radius:15.2px;
 }
-main .tab_wrap #upFrm .pw_container ul li input[name=pw_creat] {}
-main .tab_wrap #upFrm .pw_container .notice2 {}
-main .tab_wrap #upFrm .email_container {
-    background-color:purple;
+main .tab_wrap #upFrm .pw_container ul li input[name=pw_creat] {
+    padding:10px; width:490px; height:44px;
+    border-radius:15.2px; 
+    margin-top:10px;
 }
+main .tab_wrap #upFrm .pw_container .notice2 {
+    font-size:0.75rem; letter-spacing:-0.02em;
+    margin-top:10px;
+}
+main .tab_wrap #upFrm .email_container {}
 main .tab_wrap #upFrm .email_container ul {}
 main .tab_wrap #upFrm .email_container ul li {}
-main .tab_wrap #upFrm .email_container ul li input[name=user_mail] {}
-main .tab_wrap #upFrm .email_container ul li .select[name=choice] {}
-main .tab_wrap #upFrm .email_container ul li .select[name=choice] option {}
-main .tab_wrap #upFrm .email_container .notice3 {}
+main .tab_wrap #upFrm .email_container ul li:nth-child(2) {text-align:left;}
+main .tab_wrap #upFrm .email_container ul li input[name=user_mail] {
+    float:left; width:299px; height:44px;
+    border-radius:15.2px; padding:10px;
+    background-color:#fff;
+}
+main .tab_wrap #upFrm .email_container ul li select[name=choice] { 
+    background-image:url(../images/change_history.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    width:161px; height:44px;
+    float:right;
+    border-radius:15.2px; padding:0 17px;
+    
+}
+main .tab_wrap #upFrm .email_container ul li select[name=choice] option {}
+
 main .tab_wrap #upFrm .phone_container {
     background-color:yellow;
 }
 main .tab_wrap #upFrm .phone_container ul {}
-main .tab_wrap #upFrm .phone_container ul li {}
-main .tab_wrap #upFrm .phone_container ul li input[name=user_phone]{}
-main .tab_wrap #upFrm .phone_container ul li .button {}
-main .tab_wrap #upFrm .phone_container ul li .certification_btn {}
-main .tab_wrap #upFrm .btn {
-    background-color:green;
+main .tab_wrap #upFrm .phone_container ul li {
+
 }
-main .tab_wrap #upFrm .btn .join_btn{}
+main .tab_wrap #upFrm .phone_container ul li input[name=user_phone]{
+    width:325px; height:44px; background-color:#fff;
+    border-radius:15.2px; padding:10px;
+    float:left;
+}
+main .tab_wrap #upFrm .phone_container ul li .button {}
+main .tab_wrap #upFrm .phone_container ul li .certification_btn {
+    background-color:#1ED760; color:#fff;
+    float:right; width:161px; height:44px;
+    font-size:1.13rem; letter-spacing:-0.02em;
+    border-radius:15.2px; 
+}
+main .tab_wrap #upFrm .btn {}
+main .tab_wrap #upFrm .btn .join_btn{
+    background-color:#1ED760; color:#fff;
+    text-align:center; 
+}
