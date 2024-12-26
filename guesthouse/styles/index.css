@@ -1,0 +1,88 @@
+header {
+    width:1920px; 
+    margin:0 auto;
+}
+header .top {}
+header .top .lnb{}
+header .top .lnb h1 {
+    float: left;
+}
+header .top .lnb h1 a {}
+header .top .lnb h1 a img {}
+header .top .lnb .nav {
+    float:right; padding:37px 0;
+}
+header .top .lnb .nav ul {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+header .top .lnb .nav ul li {
+    margin:0 16.5px;
+    font-size:1.25rem; font-weight:700; letter-spacing:-0.02em; 
+}
+header .top .lnb .nav ul li:first-child {border-bottom:1px solid #FD8282;}
+header .top .lnb .nav ul li a {}
+header .top .bnr {
+    background-image:url(../images/ad.jpg);
+    height:763px;
+    text-align:center;
+    padding-top:113px;
+}
+header .top .bnr h1 {
+    margin-bottom: 15px;
+    font-size:3.75rem; font-weight:700; letter-spacing:-0.02em;
+    color:#fff;
+}
+header .top .bnr span {
+    font-size:1.56rem; font-weight:500; letter-spacing:-0.02em; 
+    color:#fff;
+}
+header .top .bnr .move {
+    margin:15px 0;
+}
+header .top .bnr .move a {}
+header .top .bnr .move a img {}
+main {text-align:center;}
+/*==========================객실소개 */
+main .room {
+    background-color:aqua;
+}
+main .room contents {}
+main .room contents h2 {}
+main .room contents .more_btn {}
+main .room .content {}
+main .room .content span {}
+main .room .content span img {}
+main .room .content p {}
+main .room .content img {}
+/* ===========================주변여행지 소개*/
+main .travel {background-color:lime;}
+main .travel .contents {}
+main .travel .contents h2 {}
+main .travel .contents .more_btn {}
+main .travel .content {}
+main .travel .content span {}
+main .travel .content span img {}
+main .travel .content span img:first-child {}
+main .travel .content span img:nth-child(2) {}
+main .travel .content span img:last-child {}
+main .travel .content span p {}
+/* =========================오시는길 */
+main .traffic {background-color:yellow;}
+main .traffic .contents {}
+main .traffic .contents ul {}
+main .traffic .contents ul li {}
+main .traffic .contents ul li h2 {}
+main .traffic .contents ul li img {}
+main .traffic .contents ul li span {}
+/* ======================하단배너 */
+main .bottom_bnr {background-color:coral;}
+main .bottom_bnr span {}
+/* ======================정보 */
+footer {}
+footer .info {background-color:lightgray;}
+footer .info .contents {}
+footer .info .contents address {}
+footer .info .contents em {}
+footer .info .contents span {}
+footer .info .contents span a {}
