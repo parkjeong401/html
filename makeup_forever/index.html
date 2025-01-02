@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메이크업 포에버</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="h_bg">
+            <header>
+                <h1><a href="#"><img src="./images/logo.png" alt="make up for ever"></a></h1>
+                <div class="h_right">
+                    <div class="h_top">
+                        <div class="search">
+                            <a href="#" class="brand"><img src="./images/search.png" alt="검색"></a>
+                            <!-- 검색 클릭 시 실행되는 팝업(아래) -->
+                            <div class="search_popup">
+                                <button type="button" class="close_btn"><img src="./images/close.png" alt="닫기"></button>
+                                <form action="#" method="get" id="searchFrm">
+                                    <input type="text" name="product_search" placeholder="검색어를 입력하세요">
+                                    <a href="#" class="search_btn"><img src="./images/search_1.png" alt="검색"></a>
+                                </form>
+                                <h2>실시간 인기 검색어</h2>
+                                <ol class="search_list">
+                                    <li>
+                                        <span class="num">1</span>
+                                        <a href="#" class="keywords">쿠션</a>
+                                        <span class="rating"><img src="./images/up.png" alt="순위상승"></span>
+                                    </li>
+                                    <li>
+                                        <span class="num">2</span>
+                                        <a href="#" class="keywords">파운데이션</a>
+                                        <span class="rating"><img src="./images/up.png" alt="순위상승"></span>
+                                    </li>
+                                    <li>
+                                        <span class="num">3</span>
+                                        <a href="#" class="keywords">아이섀도우</a>
+                                        <span class="rating"><img src="./images/down.png" alt="순위하락"></span>
+                                    </li>
+                                    <li>
+                                        <span class="num">4</span>
+                                        <a href="#" class="keywords">아이브로우</a>
+                                        <span class="rating"><img src="./images/normal.png" alt="순위평준화"></span>
+                                    </li>
+                                    <li>
+                                        <span class="num">5</span>
+                                        <a href="#" class="keywords">립스틱</a>
+                                        <span class="rating"><img src="./images/up.png" alt="순위상승"></span>
+                                    </li>
+                                </ol>
+                                <h2>추천 키워드</h2>
+                                <div class="keywords_recommend">
+                                    <a href="#">프라이머</a>
+                                    <a href="#">립틴트</a>
+                                    <a href="#">파운데이션</a>
+                                    <a href="#">파우더</a>
+                                    <a href="#">아이브로우</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">고객센터</a>
+                    </div>
+                    <div class="h_btm">
+                        <div class="h_b_left">
+                            <a href="#">브랜드</a>
+                            <a href="#">이벤트</a>
+                            <a href="#">미용소품</a>
+                        </div>
+                        <nav>
+                            <a href="#">BEST</a>
+                            <a href="#">FACE</a>
+                            <a href="#">EYES</a>
+                            <a href="#">LIPS</a>
+                            <!-- nav 마우스 오버 시 출력 서브메뉴(아래) -->
+                            <div class="sub_bg">
+                                <div class="sub_contents">
+                                    <ul class="depth1">
+                                        <li><a href="#">BEST</a></li>
+                                        <li class="active"><a href="#">FACE</a></li>
+                                        <li><a href="#">EYES</a></li>
+                                        <li><a href="#">LIPS</a></li>
+                                    </ul>
+                                    <!-- 2단계 서브메뉴 -->
+                                    <div class="depth2">
+                                        <ul class="sub sub1">
+                                            <li><a href="#">파운데이션</a></li>
+                                            <li><a href="#">프라이머</a></li>
+                                            <li><a href="#">블러셔</a></li>
+                                            <li><a href="#">컨실러</a></li>
+                                            <li><a href="#">파우더</a></li>
+                                        </ul>
+                                        <ul class="sub sub2">
+                                            <li><a href="#">아이라이너</a></li>
+                                            <li><a href="#">아이섀도우</a></li>
+                                            <li><a href="#">아이브로우</a></li>
+                                        </ul>
+                                        <ul class="sub sub3">
+                                            <li><a href="#">립스틱</a></li>
+                                            <li><a href="#">립라이너</a></li>
+                                            <li><a href="#">립케어</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main>
+            <!-- 1행 광고배너 -->
+            <!-- 각 배너 div, 배너들 묶는 큰 그룹 div, 공용 버튼, 스크롤등 태그 -->
+            <div class="slides_wrap"><!-- 배너 관련 대상 모두 묶는 큰부모 -->
+                <div class="slides_container"><!-- 배너들 묶는 큰 그룹 div -->
+                    <div class="slide slide1">
+                        <!-- 광고모델 사진은 bg처리 -->
+                        <div class="contents">
+                            <div class="title">
+                                <img src="./images/bnr_text.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                                <a href="#" class="bnr_link">DISCOVER</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <!-- 광고모델 사진은 bg처리 -->
+                        <div class="contents">
+                            <div class="title">
+                                <img src="./images/bnr_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps">
+                                <a href="#" class="bnr_link">DISCOVER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 배너 이전, 다음 제어 버튼 -->
+                <a href="#" class="prev_btn"><img src="./images/preve.png" alt="이전 광고보기"></a>
+                <a href="#" class="next_btn"><img src="./images/next.png" alt="다음 광고보기"></a>
+                <!-- 배너 진행 상태 스크롤 -->
+                <div class="scroll_bg">
+                    <div class="scrollbar"></div>
+                </div>
+            </div>
+            <!-- 2행 face best 상품 -->
+            <div class="face_best_wrap">
+                <div class="title">
+                    <h2>FACE BEST</h2>
+                    <a href="#" class="more">MORE</a>
+                </div>
+                <ul class="contents">
+                    <li>
+                        <div class="product">
+                            <p class="label">
+                                <p class="label">기초</p>
+                            <a href="#"><img src="./images/best1.jpg" alt=""></a>
+                            <div class="icon">
+                                <a href="#"><img src="./images/cart.png" alt=""></a>
+                                <a href="#"><img src="./images/heart.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <p class="category">HD SKIN 파우더 파운데이션</p>
+                            <h3>매트 컴팩트 스테이 트루 파운데이션</h3>
+                            <p class="price">74,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <p class="label">신제품</p>
+                            <a href="#"><img src="./images/best2.jpg" alt=""></a>
+                            <div class="icon">
+                                <a href="#"><img src="./images/cart.png" alt=""></a>
+                                <a href="#"><img src="./images/heart.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <p class="category">HD SKIN 파우더 파운데이션</p>
+                            <h3>매트 컴팩트 베이스</h3>
+                            <p class="price">62,000</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <p class="label">BEST SELLER</p>
+                            <a href="#"><img src="./images/best3.jpg" alt=""></a>
+                            <div class="icon">
+                                <a href="#"><img src="./images/cart.png" alt=""></a>
+                                <a href="#"><img src="./images/heart.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <p class="category">HD SKIN 파우더 파운데이션</p>
+                            <h3>컴팩트 스테이 트루 파운데이션</h3>
+                            <p class="price">57,000</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

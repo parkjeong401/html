@@ -1,0 +1,251 @@
+/* header 공통값 */
+#wrap .h_bg header * {
+    color:#fff;
+}
+/* =========================header */
+#wrap {}
+#wrap .h_bg {background-color:#111; position: relative;}
+#wrap .h_bg header {
+    margin:0 auto; width:1400px;
+    height:125px;
+    /* h1+h_right 정렬 */
+    display:flex; flex-flow:row nowrap; align-items:center;
+}
+#wrap .h_bg header h1 {}
+#wrap .h_bg header h1 a {}
+#wrap .h_bg header h1 a img {}
+#wrap .h_bg header .h_right {
+    width:calc(100% - 150px);
+    padding-left:20px;
+}
+#wrap .h_bg header .h_right .h_top {
+    float:right;
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+    margin-bottom:25px;
+}
+#wrap .h_bg header .h_right .h_top .search {}
+#wrap .h_bg header .h_right .h_top .search {}
+#wrap .h_bg header .h_right .h_top .search > a {}
+#wrap .h_bg header .h_right .h_top .search > a img {}
+#wrap .h_bg header .h_right .h_top > a {
+    font-size:0.88rem; letter-spacing:-0.02em;
+    margin-left:16px;
+}
+/* =========================header 검색팝업(s)*/
+#wrap .h_bg header .h_right .h_top .search .search_popup {
+    display:none; /* 초기 숨기기(검색 아이콘 클릭 시에만 출력 대상 */
+    background-color:#111;
+    position:fixed; /* 좌표 필수 */ right:0; top:0;
+    width:350px; height:100vh;/* vh는 viewport 높이 */
+    padding:20px;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .close_btn {
+    margin-bottom:50px; 
+    float:right;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .close_btn img {}
+#wrap .h_bg header .h_right .h_top .search .search_popup #searchFrm {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    clear: both;
+    border-bottom:2px solid #fff;
+    padding-bottom:7px;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup #searchFrm input[name$=search] {
+    background:none;
+    width:calc(100% - 24px);
+}/* 입력글자디자인 */
+#wrap .h_bg header .h_right .h_top .search .search_popup #searchFrm input[name$=search]::placeholder {color:#aaa;} /* 안내문구 디자인 */
+#wrap .h_bg header .h_right .h_top .search .search_popup #searchFrm .search_btn {}
+#wrap .h_bg header .h_right .h_top .search .search_popup #searchFrm .search_btn img {}
+#wrap .h_bg header .h_right .h_top .search .search_popup h2 {
+    margin:50px 0; letter-spacing:-0.02em; font-size:1.13rem;
+    font-weight:500;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .search_list {
+    display:flex; flex-flow:column nowrap;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .search_list li {
+    margin-bottom:14px; 
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .search_list li .num {
+    margin-right:20px;
+    font-size:0.94rem; letter-spacing:-0.02em;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .search_list li .keywords {
+    font-size:0.94rem; letter-spacing:-0.02em;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .search_list li .rating {
+    float:right;
+}
+#wrap .h_bg header .h_right .h_top .search .search_popup .search_list li .rating img {}
+#wrap .h_bg header .h_right .h_top .search .search_popup .keywords_recommend {}
+#wrap .h_bg header .h_right .h_top .search .search_popup .keywords_recommend a {
+    border:1px solid #fff; padding:10px 15px;
+    display:inline-block; border-radius:20px; margin:0 7px 7px 0;
+}
+/* =========================header 검색팝업(e)*/
+#wrap .h_bg header .h_right .h_btm {
+    clear: both;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-top:25px; align-items:center;
+}
+#wrap .h_bg header .h_right .h_btm .h_b_left {}
+#wrap .h_bg header .h_right .h_btm .h_b_left a {
+    margin-right:15px; 
+    font-size:1.25rem; font-weight:500; letter-spacing:-0.02em;
+}
+#wrap .h_bg header .h_right .h_btm nav {}
+#wrap .h_bg header .h_right .h_btm nav > a {
+    margin-left:19px;
+    font-size:1.25rem; font-weight:500; letter-spacing:-0.02em;
+}
+/* =========================header 서브(s)*/
+#wrap .h_bg header .h_right .h_btm nav .sub_bg {
+    display:none; 
+    background-color:#111;
+    position:absolute; left:0; top:125px; width:100%;
+    /* absolute,fixed 작성시 반드시 좌표 + width 속성도 함께 써줘야 함 */
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
+    width:1400px; margin:0 auto; height:240px;
+    padding:40px 0 0;
+    display:flex; flex:row nowrap; 
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * {width:200px; padding-left:20px;}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li {
+    margin-bottom:20px;
+    font-size:1.06rem; letter-spacing:-0.02em; font-weight:500;
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 .active {
+    border-bottom:2px solid #fff; 
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a {
+    display:block; padding-bottom:5px;
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 {
+    font-size:1.06rem; letter-spacing:-0.02em; font-weight:500;
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub li {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub li a {
+    display:block; 
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub1 {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub1 li {
+    margin-bottom:20px; 
+}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub1 li a {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub2 {display:none;}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub2 li {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub2 li a {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub3 {display:none;}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub3 li {}
+#wrap .h_bg header .h_right .h_btm nav .sub_bg .depth2 .sub3 li a {}
+/* =========================header 서브(e)*/
+/* =========================main */
+main {}
+/* ==========================main1.광고배너 */
+main .slides_wrap {
+    background-color:aqua;
+    position:relative;/* 버튼, 스크롤바 기준설정 */
+    height:650px; /* 배너 높이 고정(광고배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동높이 설정 시 높낮이가 배너에 따라 달라지는 불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정해야 하는 경우들이 많다. 그 외엔 자동높이 설정 권장!!) */
+}
+main .slides_wrap .slides_container {
+    background-color:lime;
+    height:100%;/* slides_wrap와 높이 동일 */
+}
+main .slides_wrap .slides_container .slide {
+    height:100%;/* slides_container와 높이 동일 */
+}
+main .slides_wrap .slides_container .slide .contents {
+    border:5px solid red;
+    width:1400px; margin:0 auto; overflow:hidden;
+}
+main .slides_wrap .slides_container .slide .contents .title {
+    border:5px solid blue;
+    width:50%; float:right; padding-top:144px;
+}
+main .slides_wrap .slides_container .slide .contents .title img {}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link {
+    background-color:#111; 
+    color:#fff; padding:15px 20px; border-radius:5px;
+    display:block; margin-top:41px; width:min-content;
+}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {}
+main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
+    background-color:yellow;
+    position:absolute; top:45%;
+}
+main .slides_wrap .prev_btn img, main .slides_wrap .next_btn img {}
+main .slides_wrap .prev_btn {left:190px;}
+main .slides_wrap .prev_btn img {}
+main .slides_wrap .next_btn {right:190px;}
+main .slides_wrap .next_btn img {}
+main .slides_wrap .scroll_bg {
+    background-color:#ccc;
+    width:1400px; height:2px; margin:0 auto;
+    position:relative; bottom:34px;
+}
+main .slides_wrap .scroll_bg .scrollbar {
+    background-color:#111;
+    width:200px; height:100%;
+}
+/* ==========================main1.광고배너(개별 배너) */
+main .slides_wrap .slides_container .slide1 {
+    background-image:url(../images/bnr1.jpg);
+    display:none;/* 초기 숨기기 */
+}
+main .slides_wrap .slides_container .slide1 .contents {}
+main .slides_wrap .slides_container .slide1 .contents .title {}
+main .slides_wrap .slides_container .slide1 .contents .title img {}
+main .slides_wrap .slides_container .slide1 .contents .title .bnr_link {}
+main .slides_wrap .slides_container .slide2 {
+    background-image:url(../images/bnr2.jpg);
+}
+main .slides_wrap .slides_container .slide2 .contents {}
+main .slides_wrap .slides_container .slide2 .contents .title {}
+main .slides_wrap .slides_container .slide2 .contents .title img {}
+main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}
+/* ======================main2.face best */
+main .face_best_wrap {
+    background-color:aqua;
+    width:1400px; margin:0 auto;
+}
+main .face_best_wrap .title {
+    background-color:lime;
+}
+main .face_best_wrap .title h2 {}
+main .face_best_wrap .title .more {}
+main .face_best_wrap .contents {
+    background-color:yellow;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .face_best_wrap .contents li {
+    background-color:coral;
+    width:calc((100% -(30px * 2)) / 3);
+    position: relative;
+}
+main .face_best_wrap .contents li .product {}
+main .face_best_wrap .contents li .product .label {
+    background-color:#fff;
+    display:inline-block;
+    position:absolute;
+}
+main .face_best_wrap .contents li .product > a {}
+main .face_best_wrap .contents li .product > a img {width:100%;}
+/* ===================s:2행 상품 마우스 올렸을 시 출력대상 */
+main .face_best_wrap .contents li .product .icon {
+    border:5px solid red;
+    display:flex; flex-flow:row nowrap;
+}
+main .face_best_wrap .contents li .product .icon a {}
+main .face_best_wrap .contents li .product .icon a img {}
+/* ===================E:2행 상품 마우스 올렸을시 출력대상 */
+main .face_best_wrap .contents li .txt {}
+main .face_best_wrap .contents li .txt .category {}
+main .face_best_wrap .contents li .txt .category h3 {}
+main .face_best_wrap .contents li .txt .category .price {}
