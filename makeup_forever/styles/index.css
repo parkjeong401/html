@@ -211,14 +211,23 @@ main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}
 /* ======================main2.face best */
 main .face_best_wrap {
+    font-family:Noto sans kr,sans-serif;
     background-color:aqua;
     width:1400px; margin:0 auto;
 }
 main .face_best_wrap .title {
     background-color:lime;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    padding-bottom:58px;
 }
-main .face_best_wrap .title h2 {}
-main .face_best_wrap .title .more {}
+main .face_best_wrap .title h2 {
+    font-size:1.25rem;
+    letter-spacing:-0.02em;
+}
+main .face_best_wrap .title .more {
+    letter-spacing:-0.02em;
+}
 main .face_best_wrap .contents {
     background-color:yellow;
     display:flex; flex-flow:row nowrap;
@@ -227,25 +236,39 @@ main .face_best_wrap .contents {
 main .face_best_wrap .contents li {
     background-color:coral;
     width:calc((100% -(30px * 2)) / 3);
+}
+main .face_best_wrap .contents li .product {
     position: relative;
 }
-main .face_best_wrap .contents li .product {}
 main .face_best_wrap .contents li .product .label {
     background-color:#fff;
     display:inline-block;
-    position:absolute;
+    position:absolute; left:0; top:0;
+    padding:5px 10px;
+    letter-spacing:-0.02em;
 }
 main .face_best_wrap .contents li .product > a {}
 main .face_best_wrap .contents li .product > a img {width:100%;}
 /* ===================s:2행 상품 마우스 올렸을 시 출력대상 */
+main .face_best_wrap .contents li .product:hover .icon {display:block;}
 main .face_best_wrap .contents li .product .icon {
     border:5px solid red;
     display:flex; flex-flow:row nowrap;
+    position:absolute; left:0; bottom:5px;
+    width:100%;
+    text-align:center;
+    display:none;/* 초기숨기기 */
 }
-main .face_best_wrap .contents li .product .icon a {}
+main .face_best_wrap .contents li .product .icon a {opacity:0.5;}
+main .face_best_wrap .contents li .product .icon a:hover {opacity:1;}
 main .face_best_wrap .contents li .product .icon a img {}
 /* ===================E:2행 상품 마우스 올렸을시 출력대상 */
 main .face_best_wrap .contents li .txt {}
-main .face_best_wrap .contents li .txt .category {}
-main .face_best_wrap .contents li .txt .category h3 {}
-main .face_best_wrap .contents li .txt .category .price {}
+main .face_best_wrap .contents li .txt .category {margin-top:10px;}
+main .face_best_wrap .contents li .txt .category h3 {
+    font-size:1.25rem;
+    letter-spacing:-0.02em;
+}
+main .face_best_wrap .contents li .txt .category .price {
+    letter-spacing:-0.02em;
+}
