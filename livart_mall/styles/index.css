@@ -1,0 +1,179 @@
+/*=====================header*/
+header {
+    background-color:aqua;
+    margin:0 auto;
+    width:1755px;
+    height:100px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:29px 0;
+}
+header h1 {float:left;}
+header h1 a {}
+header h1 a img {}
+header .search {}
+header .search .brand {
+    background-image:url(../images/search.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    display:inline-block;
+}
+header .search .brand img {}
+/*=====================검색관련 항목*/
+header nav {}
+header nav ul {
+    background-color:yellow;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+header nav ul li {
+    margin-right:18px;
+    letter-spacing:-0.02em;
+    line-height:1.2;
+}
+/*=====================개인정보 관련 항목*/
+main {width:100%;}
+main .bnr {
+    text-align:center;
+    background-image:url(../images/베너광고.jpg);
+    background-size:cover;
+    height:574px;
+    position:relative;
+    padding:126px 0 0 373px;
+    text-align:left;
+}
+main .bnr .bnr_txt  {
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+    justify-content:space-between;
+    margin-bottom:16px;
+    float:right;
+}
+main .bnr .bnr_txt a {
+    display:block;
+}
+main .bnr .bnr_txt a span {
+    margin-bottom:16px;
+}
+main .bnr .bnr_bar {
+    position:absolute; bottom:41px; 
+}
+main .bnr .bnr_bar a {}
+main .bnr .bnr_bar a img {}
+/*=====================베너관련 항목*/
+main .menu {background-color:lime;}
+main .menu a {}
+main .menu a img {}
+main .menu a span {}
+/*=====================메뉴관련 항목*/
+main .best_product {background-color:lightgray;}
+main .best_product h2 {}
+main .best_product a {}
+main .best_product a img {}
+main .best_product .series_01 {}
+main .best_product .series_01 ul {}
+main .best_product .series_01 ul li {}
+main .best_product .series_01 ul li span {}
+main .best_product .series_02 {}
+main .best_product .series_02 ul {}
+main .best_product .series_02 ul li {}
+main .best_product .series_02 ul li span {}
+main .best_product .series_03 {}
+main .best_product .series_03 ul {}
+main .best_product .series_03 ul li {}
+main .best_product .series_03 ul li span {}
+main .best_product .series_04 {}
+main .best_product .series_04 ul {}
+main .best_product .series_04 ul li {}
+main .best_product .series_04 ul li span {}
+/*=====================베스트상품 관련 항목*/
+main .promotions {background-color:#f5f5f5;}
+main .promotions h2 {}
+main .promotions a {}
+main .promotions a img {}
+main .promotions .event_1 {}
+main .promotions .event_1 ul {}
+main .promotions .event_1 ul li {}
+main .promotions .event_1 ul li a {}
+main .promotions .event_1 ul li a img {}
+main .promotions .event_2 {}
+main .promotions .event_2 ul {}
+main .promotions .event_2 ul li {}
+main .promotions .event_2 ul li a {}
+main .promotions .event_2 ul li a img {}
+main .promotions .event_3 {}
+main .promotions .event_3 ul {}
+main .promotions .event_3 ul li {}
+main .promotions .event_3 ul li a {}
+main .promotions .event_3 ul li a img {}
+/*=====================이벤트 및 프로모션 관련 항목*/
+main .influencer_review {background-color:lightcyan;}
+main .influencer_review h2 {}
+main .influencer_review h2 a {}
+main .influencer_review h2 a img {}
+main .influencer_review .review_1 {}
+main .influencer_review .review_1 a {}
+main .influencer_review .review_1 a img {}
+main .influencer_review .review_1 ul {}
+main .influencer_review .review_1 ul li {}
+main .influencer_review .review_1 ul li span {}
+main .influencer_review .review_2 {}
+main .influencer_review .review_2 a {}
+main .influencer_review .review_2 a img {}
+main .influencer_review .review_3 {}
+main .influencer_review .review_3 a {}
+main .influencer_review .review_3 a img {}
+main .influencer_review .review_4 {}
+main .influencer_review .review_4 a {}
+main .influencer_review .review_4 a img {}
+/*=====================인플루언서 리뷰 관련 항목*/
+main .best_photo {background-color:orange;}
+main .best_photo h2 {}
+main .best_photo h2 a {}
+main .best_photo h2 a img {}
+main .best_photo .photo_review_1 {}
+main .best_photo .photo_review_1 a {}
+main .best_photo .photo_review_1 a img {}
+main .best_photo .photo_review_2 {}
+main .best_photo .photo_review_2 a {}
+main .best_photo .photo_review_2 a img {}
+main .best_photo .photo_review_3 {}
+main .best_photo .photo_review_3 a {}
+main .best_photo .photo_review_3 a img {}
+main .best_photo .photo_review_4 {}
+main .best_photo .photo_review_4 a {}
+main .best_photo .photo_review_4 a img {}
+main .best_photo .photo_review_5 {}
+main .best_photo .photo_review_5 a {}
+main .best_photo .photo_review_5 a img {}
+main .best_photo .photo_review_6 {}
+main .best_photo .photo_review_6 a {}
+main .best_photo .photo_review_6 a img {}
+/*=====================베스트 포토리뷰 관련 항목*/
+/*=====================main*/
+footer {background-color:#000; color:#fff;}
+footer .info {}
+footer .info li {}
+/*=====================회사소개 및 경영이념 관련 항목*/
+footer .question {}
+footer .question li {}
+/*=====================질문 및 매장관련 항목*/
+footer .service_center {}
+footer .service_center li {}
+/*=====================고객센터 연락관련 항목*/
+footer .address {}
+footer .address li {}
+/*=====================주소관련 항목*/
+footer .business {}
+footer .business li {}
+/*=====================사업자등록번호 관련 항목*/
+footer ul {}
+footer ul li {}
+/* ===================== 하단 오른쪽 관련 항목 */
+footer .ft_right {}
+footer .ft_right ul {}
+footer .ft_right ul li {}
+footer .ft_right ul li img {}
+/*=====================footer*/
