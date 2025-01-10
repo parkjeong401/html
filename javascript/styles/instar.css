@@ -1,0 +1,33 @@
+.instargram {
+    max-width:360px; margin:30px auto 0;
+    background-color:#f1f1f1;
+}
+.instargram .profile {
+    display:flex; align-items:center;
+    justify-content:space-between; height:40px; padding:0 10px;
+}
+.instargram .profile .user {display:flex; align-items:center;}
+.instargram .profile .user img {width:24px; border-radius:50%;}
+.instargram .profile .user span {padding-left:4px;}
+.instargram main {height:500px; overflow:hidden;}
+.instargram main img {width:100%;}
+.instargram .container {}
+.instargram .container .icons {
+    display:flex; align-items:center;
+    justify-content:space-between; height:40px; padding:0 10px;
+}
+.instargram .container .icons .left {display:flex; align-items:center;}
+.instargram .container .icons .left a {width:24px; margin-right:6px;}
+.instargram .container .icons .left a img {width:100%;}
+.instargram .container .icons .left .like {}
+.instargram .container .icons .left .like img {}
+.instargram .container .icons .left .comments {}
+.instargram .container .icons .left .comments img {}
+.instargram .container .icons .left .paper {}
+.instargram .container .icons .left .paper img {}
+.instargram .container .contents {padding:10px;}
+.instargram .container .contents p {line-height:1.7;}
+.instargram .container .contents .like_number {}
+.instargram .container .contents .user {font-weight:600;}
+.instargram .container .contents .content {}
+.instargram .container .contents .date {}
