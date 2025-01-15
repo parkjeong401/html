@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정 체중 계산기</title>
+    <link href="./styles/.css" rel="stylesheet">
+    <link href="./styles/weight.css" rel="stylesheet">
+    <script src="./weight.js" defer></script>
+</head>
+<body>
+    <div id="weight_wrap">
+        <div class="height_calc">
+            <h1>적정 체중 계산기</h1>
+            <input type="number" name="height_input" id="user_height" placeholder="신장(cm)를 입력해주세요.">
+        </div>
+        <div class="weight_calc">
+            <input type="number" name="weight_input" id="user_weight" placeholder="체중(kg)을 입력해주세요." required>        
+        </div>
+        <div class="weight_calc_btn">
+            <button type="button" id="calc_btn">계산하기</button>
+        </div>
+        <div class="result">
+            <h2>결과</h2>
+            <p class="weight_result"></p>
+        </div>
+    </div>
+</body>
+</html>
