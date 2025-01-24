@@ -1,0 +1,116 @@
+main {}
+main ul {
+    background-color:aqua;
+    width:100%; margin:0 auto;
+    position: relative;
+    padding:0 72px;
+    float:left;
+}
+main ul li img {
+    border-radius:20px;
+    width:100%; max-width:600px;
+    padding:72px 0;
+}
+main ul li span {
+    background-color:#13DE42;
+    position:absolute; left:72px; bottom:90px;
+    margin-left:24px; width:60px; padding:8px 6.35px;
+    text-align:center; color:#fff;
+    border-radius:5px; font-size:1.13rem;
+    font-weight:500; line-height:1.2; letter-spacing:-0.02em;
+}
+main .product {
+    float:right;
+    position: absolute; right:250px; top:100px;
+    padding:72px;
+    width:572px;
+}
+main .product h2 {
+    font-size:1.88rem; letter-spacing:-0.02em;
+    line-height:1.2; font-weight:700;
+}
+main .product .mark {
+    float:right;
+    position:absolute; right:15px; top:72px;
+    display:flex; flex-flow:column wrap;
+    font-size:0.88rem;
+    letter-spacing:-0.02em; line-height:1.2;
+}
+main .product .mark .bookmark {}
+main .product .mark .bookmark img {}
+main .product .mark span {}
+main .product .share {
+    float:right;
+    position:absolute; right:-15px; top:72px;
+}
+main .product .share a {}
+main .product .share a img {}
+main .product .price {
+    background-color:gray;
+    display:flex;
+    justify-content:space-between;
+    float:left;
+    margin-top:32px;
+    align-items:center;
+}
+main .product .price p {}
+main .product .price span {
+    font-size:1.19rem;
+    letter-spacing:-0.02em; line-height:1.2;
+    margin-left:61px;
+    color:#9B9999;
+}
+main .product .dc_price {
+    background-color:coral;
+    margin-top:75px;
+    display:flex;
+    justify-content:space-between;
+    float:left;
+    align-items:center;
+}
+main .product .dc_price p {}
+main .product .dc_price em {}
+main .product .coupon {
+    background-color:yellow;
+    display:flex;
+}
+main .product .coupon li {}
+main .product .coupon li a {
+    background-color:lightsalmon;
+}
+main .product .event {
+    background-color:lightgreen;
+}
+main .product .event li {}
+main .product .event li em {}
+main .choice_pro {}
+main .choice_pro .choice {
+    background-color:skyblue;
+}
+main .choice_pro .choice #size {
+    background-color:aqua;
+}
+main .choice_pro .add_option {
+    background-color:lightpink;
+}
+main .choice_pro .add_option #add_product {}
+main .choice_pro .size_option {}
+main .choice_pro .size_option .product_size_chocie {}
+main .choice_pro .size_option .product_size_chocie .product_size {}
+main .choice_pro .size_option .product_size_chocie #minus {}
+main .choice_pro .size_option .product_size_chocie span {}
+main .choice_pro .size_option .product_size_chocie #plus {}
+main .order {}
+main .order li {
+    float:right;
+    position: absolute; padding:72px 0;
+}
+main .order li span {}
+main .cart {
+    border:5px solid #EE3535;
+}
+main .cart .shopping_cart {}
+main .buy {}
+main .buy .buy_now {
+    background-color:#EE3535;
+}

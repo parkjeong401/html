@@ -1,6 +1,6 @@
 /*=====================header*/
 header {
-    background-color:aqua;
+    background-color:#fff;
     margin:0 auto;
     width:1755px;
     height:100px;
@@ -23,7 +23,7 @@ header .search .brand img {}
 /*=====================검색관련 항목*/
 header nav {}
 header nav ul {
-    background-color:yellow;
+    background-color:#fff;
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;

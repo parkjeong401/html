@@ -1,0 +1,32 @@
+header {
+    background-color:#fff;
+    margin:0 auto;
+    width:1755px;
+    height:100px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:29px 0;
+}
+header h1 {float:left;}
+header h1 a {}
+header h1 a img {}
+header .search {}
+header .search .brand {
+    background-image:url(../images/search.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    display:inline-block;
+}
+header nav {}
+header nav ul {
+    background-color:#fff;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+header nav ul li a {
+    margin-right:18px;
+    letter-spacing:-0.02em;
+    line-height:1.2;
+}
