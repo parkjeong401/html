@@ -1,0 +1,69 @@
+.title {position: relative;}
+.title h1 {
+    width:100%; height:1030px;
+    margin:0 auto;
+    background:#769DF0;   
+    font-weight:500;
+    letter-spacing:-0.02em; font-size:3.75rem;
+    line-height:1.3;
+}
+.title h1 em {
+    font-weight:700; font-size:4.38rem;
+    letter-spacing:-0.02em;
+}
+.title h1 span {
+    font-weight:600; font-size:2.25rem;
+     margin-top:36px; letter-spacing:-0.02em;
+}
+.title .personal_contact {
+    float:right; position:absolute; right:0; bottom:132px;
+    text-align:right;
+}
+.title .personal_contact em {
+    font-weight:600; letter-spacing:-0.02em;
+    font-size:1.25rem;
+}
+.title .personal_contact .phone {
+    margin-top:6px;
+}
+.title .personal_contact .phone p {
+    letter-spacing:-0.02em;
+}
+.title .personal_contact .email {
+    margin-top:6px;
+}
+.title .personal_contact .email p {
+    letter-spacing:-0.02em;
+}
+.my_profile {
+    width:1398px;
+    padding-top:185px; text-align:center;
+    height:100vh; margin:0 auto;
+    position: relative;
+}
+.my_profile span {
+    font-weight:700; font-size:2.5rem;
+    letter-spacing:-0.02em; color:#FC9300;
+}
+.my_profile .greetings {
+    padding-top:134px;
+    text-align:left; 
+}
+.my_profile .greetings span {
+    font-size:3.75rem; font-weight:700;
+    color:#000;
+}
+.my_profile .greetings p {
+    font-size:1.5rem; line-height:1.3;
+}
+.my_profile .greetings p span {
+    font-size:1.5rem; color:#769DF0;
+    letter-spacing:-0.02em; 
+    font-weight:600;
+}
+.my_profile .greetings p em {
+    font-weight:700; 
+}
+.my_profile .greetings img {
+    margin-top:34px;
+}
