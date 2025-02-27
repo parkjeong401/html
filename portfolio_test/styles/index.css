@@ -464,7 +464,7 @@
     position:absolute; left:742px; right:734px; top:3400px;
 }
 .design .detail_dg p {
-    position:absolute; left:742px; right:734px; top:3500px;
+    position:absolute; left:742px; right:734px; top:3510px;
 }
 .design .detail_dg .detail {
     width:1390px; margin:0 auto;
@@ -502,5 +502,5 @@
 }
 .end p {
     font-size:1.25rem;
-    position:absolute; left:799px; right:791px; top:3790px;
+    position:absolute; left:799px; right:791px; top:3850px;
 }
