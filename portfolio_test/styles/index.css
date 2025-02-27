@@ -1,0 +1,506 @@
+.title {position: relative;}
+.title h1 {
+    width:100%; height:1030px;
+    margin:0 auto;
+    background:#769DF0;   
+    font-weight:500;
+    letter-spacing:-0.02em; font-size:3.75rem;
+    line-height:1.3;
+}
+.title h1 em {
+    font-weight:700; font-size:4.38rem;
+    letter-spacing:-0.02em;
+}
+.title h1 span {
+    font-weight:600; font-size:2.25rem;
+     margin-top:36px; letter-spacing:-0.02em;
+}
+.title .personal_contact {
+    float:right; position:absolute; right:0; bottom:132px;
+    text-align:right;
+}
+.title .personal_contact em {
+    font-weight:600; letter-spacing:-0.02em;
+    font-size:1.25rem;
+}
+.title .personal_contact .phone {
+    margin-top:6px;
+}
+.title .personal_contact .phone p {
+    letter-spacing:-0.02em;
+}
+.title .personal_contact .email {
+    margin-top:6px;
+}
+.title .personal_contact .email p {
+    letter-spacing:-0.02em;
+}
+/* ================첫화면=============== */
+.my_profile {
+    width:1398px;
+    padding-top:185px; text-align:center;
+    height:100vh; margin:0 auto;
+    position: relative;
+}
+.my_profile h2 {
+    font-weight:700; font-size:2.5rem;
+    letter-spacing:-0.02em; color:#FC9300;
+}
+.my_profile .greetings {
+    padding-top:134px;
+    text-align:left; 
+}
+.my_profile .greetings span {
+    font-size:3.75rem; font-weight:700;
+    color:#000;
+}
+.my_profile .greetings p {
+    font-size:1.5rem; line-height:1.3;
+}
+.my_profile .greetings p span {
+    font-size:1.5rem; color:#769DF0;
+    letter-spacing:-0.02em; 
+    font-weight:600;
+}
+.my_profile .greetings p em {
+    font-weight:700; 
+}
+.my_profile .greetings img {
+    margin-top:34px;
+}
+.my_profile .my_info {
+    position:absolute; left:606px; top:582px;
+    text-align:left; 
+}
+.my_profile .my_info span {
+    font-weight:600; color:#FC9300;
+    font-size:1.25rem;
+}
+.my_profile .my_info .personal_info {
+    margin-top:8px;
+}
+.my_profile .my_info .personal_info p {
+    margin-top:8px; letter-spacing:-0.02em;
+}
+.my_profile .programs {
+    text-align:left;
+    position:absolute; left:606px; top:737px;
+}
+.my_profile .programs span {
+    display:block; 
+    font-weight:600; color:#FC9300;
+    font-size:1.25rem;
+}
+.my_profile .programs img {
+    margin-top:8px;
+}
+.my_profile .graduate {
+    text-align:left;
+    position:absolute; right:131px; top:489px;
+}
+.my_profile .graduate span {
+    font-weight:600; color:#FC9300;
+    font-size:1.25rem;
+}
+.my_profile .graduate .completion {}
+.my_profile .graduate .completion p {
+    margin:8px 0 8px 0;
+    font-weight:600; 
+}
+.my_profile .graduate .completion span {
+    font-size:0.94rem; color:#7E7E7E;
+    font-weight:400;
+}
+.my_profile .my_license {
+    text-align:left;
+    position:absolute; right:425px; top:648px;
+}
+.my_profile .my_license span {
+    font-weight:600; color:#FC9300;
+    font-size:1.25rem;
+}
+.my_profile .my_license .personal_license {}
+.my_profile .my_license .personal_license p {
+    margin:8px 0 8px 0; font-weight:600;
+}
+.my_profile .my_license .personal_license span {
+    font-size:0.94rem; color:#7E7E7E;
+    font-weight:400;
+}
+/* =====================프로필===================== */
+.web {
+    text-align:center;
+    padding:230px 0;
+    margin:0 auto;
+    position:relative;
+    letter-spacing:-0.02em;
+}
+.web h3 {
+    margin-bottom:134px;
+    font-weight:700; font-size:3.75rem;
+}
+.web .web_design1 {
+    margin-bottom:215px;
+}
+.web .web_design1 img {
+    position:absolute; left:336px; top:435px;
+}
+.web .web_design1 .food_web {
+    position:absolute; left:1092px; top:435px; 
+    text-align:left;
+}
+.web .web_design1 .food_web em {
+    font-weight:600; font-size:1.88rem;
+}
+.web .web_design1 .food_web .work1 {
+    margin-top:28px;
+}
+.web .web_design1 .food_web .work1 span {
+    font-weight:500; font-size:1.25rem;
+}
+.web .web_design1 .food_web .work1 .person_work {
+    margin-top:15px;
+}
+.web .web_design1 .food_web .work1 .person_work p {
+    margin-bottom:15px;
+    font-size:1.13rem;
+}
+.web .web_design1 .food_web .work1 .use_programs {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design1 .food_web .work1 .use_programs span {
+    font-weight:600;
+}
+.web .web_design1 .food_web .work1 .use_programs p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design1 .food_web .work1 .page {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design1 .food_web .work1 .page span {
+    font-weight:600;
+}
+.web .web_design1 .food_web .work1 .page p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design1 .food_web .work1 .planning1 {
+    margin-right:7px;
+    padding-top:15px;
+}
+.web .web_design1 .food_web .work1 .planning1 .wire {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design1 .food_web .work1 .planning1 .plan {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design1 .food_web .work1 .planning1 .prototype {
+    border-radius:10px; background-color:#96DBF4;
+    width:116px; padding:10px;
+    font-size:1.13rem; color:#fff;
+}
+/* ===================매드 포 갈릭=========================== */
+.web .web_design2 {
+    position: relative;
+    margin-bottom:215px;
+}
+.web .web_design2 img {
+    position:absolute; left:336px; top:435px;
+}
+.web .web_design2 .ping {
+    position:absolute; left:1099px; top:435px; 
+    text-align:left;
+}
+.web .web_design2 .ping em {
+    font-weight:600; font-size:1.88rem;
+}
+.web .web_design2 .ping .work2 {
+    margin-top:28px;
+}
+.web .web_design2 .ping .work2 span {
+    font-weight:500; font-size:1.25rem;
+}
+.web .web_design2 .ping .work2 .person_work2 {
+    margin-top:15px;
+}
+.web .web_design2 .ping .work2 .person_work2 p {
+    margin-bottom:15px;
+    font-size:1.13rem;
+}
+.web .web_design2 .ping .work2 .use_programs2 {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design2 .ping .work2 .use_programs2 span {
+    font-weight:600;
+}
+.web .web_design2 .ping .work2 .use_programs2 p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design2 .ping .work2 .page2 {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design2 .ping .work2 .page2 span {
+    font-weight:600;
+}
+.web .web_design2 .ping .work2 .page2 p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design2 .ping .work2 .planning2 {
+    margin-right:7px;
+    padding-top:15px;
+}
+.web .web_design2 .ping .work2 .planning2 .wire2 {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design2 .ping .work2 .planning2 .plan2 {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design2 .ping .work2 .planning2 .prototype2 {
+    border-radius:10px; background-color:#96DBF4;
+    width:116px; padding:10px;
+    font-size:1.13rem; color:#fff;
+} 
+/* =======================핑골프============== */
+.web .web_design3 {}
+.web .web_design3 img {
+    position:absolute; left:336px; top:1475px;
+}
+.web .web_design3 .cellfusionC {
+    position:absolute; left:1092px; top:1475px; 
+    text-align:left;
+}
+.web .web_design3 .cellfusionC em {
+    font-weight:600; font-size:1.88rem;
+}
+.web .web_design3 .cellfusionC .work3 {
+    margin-top:28px;
+}
+.web .web_design3 .cellfusionC .work3 span {
+    font-weight:500; font-size:1.25rem;
+}
+.web .web_design3 .cellfusionC .work3 .person_work3 {
+    margin-top:15px;
+}
+.web .web_design3 .cellfusionC .work3 .person_work3 p {
+    margin-bottom:15px;
+    font-size:1.13rem;
+}
+.web .web_design3 .cellfusionC .work3 .use_programs3 {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design3 .cellfusionC .work3 .use_programs3 span {
+    font-weight:600;
+}
+.web .web_design3 .cellfusionC .work3 .use_programs3 p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design3 .cellfusionC .work3 .page3 {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design3 .cellfusionC .work3 .page3 span {
+    font-weight:600;
+}
+.web .web_design3 .cellfusionC .work3 .page3 p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design3 .cellfusionC .work3 .planning3 {
+    margin-right:7px;
+    padding-top:15px;
+}
+.web .web_design3 .cellfusionC .work3  .planning3 .wire3 {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design3 .cellfusionC .work3  .planning3 .plan3 {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design3 .cellfusionC .work3  .planning3 .prototype3 {
+    border-radius:10px; background-color:#96DBF4;
+    width:116px; padding:10px;
+    font-size:1.13rem; color:#fff;
+}
+/* ============================셀퓨전씨============= */
+.web .web_design4 {}
+.web .web_design4 img {
+    position:absolute; left:336px; top:2039px;
+}
+.web .web_design4 .pet_web {
+    position:absolute; left:1092px; top:2039px; 
+    text-align:left;
+}
+.web .web_design4 .pet_web em {
+    font-weight:600; font-size:1.88rem;
+}
+.web .web_design4 .pet_web .work4 {
+    margin-top:28px;
+}
+.web .web_design4 .pet_web .work4 span {
+    font-weight:500; font-size:1.25rem;
+}
+.web .web_design4 .pet_web .work4 .person_work4 {
+    margin-top:15px;
+}
+.web .web_design4 .pet_web .work4 .person_work4 p {
+    margin-bottom:15px;
+    font-size:1.13rem;
+}
+.web .web_design4 .pet_web .work4 .use_programs4 {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design4 .pet_web .work4 .use_programs4 span {
+    font-weight:600;
+}
+.web .web_design4 .pet_web .work4 .use_programs4 p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design4 .pet_web .work4 .page4 {
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:15px;
+}
+.web .web_design4 .pet_web .work4 .page4 span {
+    font-weight:600;
+}
+.web .web_design4 .pet_web .work4 .page4 p {
+    margin-left:9px;
+    font-size:1.13rem;
+}
+.web .web_design4 .pet_web .work4 .planning4 {
+    margin-right:7px;
+    padding-top:15px;
+}
+.web .web_design4 .pet_web .work4  .planning4 .wire4 {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design4 .pet_web .work4  .planning4 .plan4 {
+    border-radius:10px; background-color:#E2E2E2;
+    width:116px; padding:10px;
+    font-size:1.13rem;
+}
+.web .web_design4 .pet_web .work4  .planning4 .prototype4 {
+    border-radius:10px; background-color:#96DBF4;
+    width:116px; padding:10px;
+    font-size:1.13rem; color:#fff;
+}
+.design {
+    position: relative;
+}
+.design .sns_dg {
+    text-align: center;
+}
+.design .sns_dg h3 {
+    text-align: center;
+    margin-bottom:134px;
+    font-weight:700; font-size:3.75rem;
+    position:absolute; left:780px; right:780px; top:1990px;
+}
+.design .sns_dg .sns {
+    width:1400px; margin:0 auto;
+    position:absolute; left:264px; right:264px; top:2190px;
+}
+.design .sns_dg .sns .swiper-wrapper {
+    transition-timing-function:linear;
+}
+.design .sns_dg .sns .s {
+    cursor: pointer;
+}
+.design .sns_dg .sns .s img {
+    margin-left:20px;
+}
+.design .banner_dg {
+    padding-bottom:230px;
+    text-align:center;
+}
+.design .banner_dg h3 {
+    margin-bottom:134px;
+    font-weight:700; font-size:3.75rem;
+    position:absolute; left:718px; right:710px; top:2700px;
+}
+.design .banner_dg .banner {
+    width:1390px; margin:0 auto;
+    position:absolute; left:269px; right:261px; top:2900px;
+}
+.design .banner_dg .banner .swiper-wrapper {
+    transition-timing-function:linear;
+}
+.design .banner_dg .banner .b {
+    cursor: pointer;
+}
+.design .banner_dg .banner .b img {
+    margin-left:20px;
+}
+.design .detail_dg {
+    padding-bottom:230px;
+    text-align:center;
+}
+.design .detail_dg h3 {
+    margin-bottom:134px;
+    font-weight:700; font-size:3.75rem;
+    position:absolute; left:742px; right:734px; top:3400px;
+}
+.design .detail_dg p {
+    position:absolute; left:742px; right:734px; top:3500px;
+}
+.design .detail_dg .detail {
+    width:1390px; margin:0 auto;
+    position:absolute; left:269px; right:261px; top:3600px;
+}
+.design .detail_dg .detail .swiper-wrapper {
+    /* overflow:hidden; */
+}
+.design .detail_dg .detail .d {
+    cursor: pointer;
+}
+.design .detail_dg .detail .d img {
+    width:60px;
+}
+.popup_bg {
+    position:fixed; left:0; top:0;
+    width:100%; height:100vh; z-index:999;
+    background:rgba(0,0,0,0.5);
+}
+.popup_bg .scroll_bg {
+    height:80vh; overflow:auto;
+    width:700px; margin:100px auto 0;
+}
+.popup_bg .scroll_bg img {
+    width:100%;
+}
+.end {
+    position: relative;
+    text-align:center;
+}
+.end h3 {
+    position:absolute; left:799px; right:791px; top:3700px;
+    font-weight:700; font-size:3.75rem;
+    margin-bottom:8px;
+}
+.end p {
+    font-size:1.25rem;
+    position:absolute; left:799px; right:791px; top:3790px;
+}
