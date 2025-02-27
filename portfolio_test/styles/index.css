@@ -1,10 +1,12 @@
-.title {position: relative;}
+.title {position: relative;padding: 100px;background: #769DF0;height: 100vh;}
 .title h1 {
-    width:100%; height:1030px;
-    margin:0 auto;
-    background:#769DF0;   
+    /* width:100%; */
+    /* height:1030px; */
+    /* margin:0 auto; */
+    /* background:#769DF0; */
     font-weight:500;
-    letter-spacing:-0.02em; font-size:3.75rem;
+    letter-spacing:-0.02em;
+    font-size:3.75rem;
     line-height:1.3;
 }
 .title h1 em {
@@ -16,7 +18,10 @@
      margin-top:36px; letter-spacing:-0.02em;
 }
 .title .personal_contact {
-    float:right; position:absolute; right:0; bottom:132px;
+    /* float:right; */
+    position:absolute;
+    right: 100px;
+    bottom: 100px;
     text-align:right;
 }
 .title .personal_contact em {
@@ -38,39 +43,58 @@
 /* ================첫화면=============== */
 .my_profile {
     width:1398px;
-    padding-top:185px; text-align:center;
-    height:100vh; margin:0 auto;
+    text-align:center;
+    /* height:100vh; */
+    margin:0 auto;
     position: relative;
+    display: flex;
+    align-items: center;
 }
-.my_profile h2 {
-    font-weight:700; font-size:2.5rem;
+h2 {
+    font-weight:700; font-size:2.5rem; text-align:center; 
+    padding-top:120px;
     letter-spacing:-0.02em; color:#FC9300;
 }
+.my_profile .right {
+    display: flex;
+    /* width: 20%; */
+    /* background: red; */
+    padding-top: 150px;
+}
+.my_profile .right .left {}
+.my_profile .right .right2 {}
 .my_profile .greetings {
-    padding-top:134px;
-    text-align:left; 
+    padding-top: 55px;
+    text-align:left;
+    margin-right: 200px;
 }
 .my_profile .greetings span {
-    font-size:3.75rem; font-weight:700;
+    font-size: 1.95rem;
     color:#000;
 }
 .my_profile .greetings p {
-    font-size:1.5rem; line-height:1.3;
+    font-size: 2rem;
+    line-height: 1.4;
 }
 .my_profile .greetings p span {
-    font-size:1.5rem; color:#769DF0;
-    letter-spacing:-0.02em; 
-    font-weight:600;
+    font-size: 2.2rem;
+    color: #769df0;
+    letter-spacing:-0.02em;
 }
 .my_profile .greetings p em {
     font-weight:700; 
 }
 .my_profile .greetings img {
     margin-top:34px;
+    border-radius:5px;
 }
 .my_profile .my_info {
-    position:absolute; left:606px; top:582px;
-    text-align:left; 
+    /* position:absolute; */
+    /* left:606px; */
+    /* top:582px; */
+    text-align:left;
+    margin-right: 114px;
+    margin-bottom: 50px;
 }
 .my_profile .my_info span {
     font-weight:600; color:#FC9300;
@@ -80,11 +104,12 @@
     margin-top:8px;
 }
 .my_profile .my_info .personal_info p {
-    margin-top:8px; letter-spacing:-0.02em;
+    margin-top:8px;
+    letter-spacing:-0.02em;
+    line-height: 1.5;
 }
 .my_profile .programs {
     text-align:left;
-    position:absolute; left:606px; top:737px;
 }
 .my_profile .programs span {
     display:block; 
@@ -96,7 +121,11 @@
 }
 .my_profile .graduate {
     text-align:left;
-    position:absolute; right:131px; top:489px;
+    /* position:absolute; */
+    /* right:131px; */
+    /* top:489px; */
+    margin-bottom: 50px;
+    /* padding-top: 50px; */
 }
 .my_profile .graduate span {
     font-weight:600; color:#FC9300;
@@ -105,7 +134,8 @@
 .my_profile .graduate .completion {}
 .my_profile .graduate .completion p {
     margin:8px 0 8px 0;
-    font-weight:600; 
+    font-weight:600;
+    line-height: 1.8;
 }
 .my_profile .graduate .completion span {
     font-size:0.94rem; color:#7E7E7E;
@@ -113,11 +143,16 @@
 }
 .my_profile .my_license {
     text-align:left;
-    position:absolute; right:425px; top:648px;
+    /* position:absolute; */
+    /* right:425px; */
+    /* top:648px; */
+    width: 100%;
 }
 .my_profile .my_license span {
-    font-weight:600; color:#FC9300;
+    font-weight:600;
+    color:#FC9300;
     font-size:1.25rem;
+    margin-top: 50px;
 }
 .my_profile .my_license .personal_license {}
 .my_profile .my_license .personal_license p {
@@ -130,7 +165,7 @@
 /* =====================프로필===================== */
 .web {
     text-align:center;
-    padding:230px 0;
+    padding: 172px 0;
     margin:0 auto;
     position:relative;
     letter-spacing:-0.02em;
@@ -139,15 +174,28 @@
     margin-bottom:134px;
     font-weight:700; font-size:3.75rem;
 }
-.web .web_design1 {
+.web .webd {
     margin-bottom:215px;
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    /* margin-bottom: 30px; */
+    padding-bottom: 50px;
 }
-.web .web_design1 img {
-    position:absolute; left:336px; top:435px;
+.web .webd img {
+    /* position:absolute; */
+    /* left:336px; */
+    /* top:435px; */
+    width: 70%;
+    border-radius:5px;
 }
-.web .web_design1 .food_web {
-    position:absolute; left:1092px; top:435px; 
+.web .webd img+div {
+    /* position:absolute; */
+    /* left: 0; */
+    /* top:435px; */
     text-align:left;
+    width: 30%;
+    margin-left: 30px;
 }
 .web .web_design1 .food_web em {
     font-weight:600; font-size:1.88rem;
@@ -196,6 +244,7 @@
     width:116px; padding:10px;
     font-size:1.13rem;
 }
+.web .webd a:hover {box-shadow:0 0 10px rgba(0,0,0,0.3);}
 .web .web_design1 .food_web .work1 .planning1 .plan {
     border-radius:10px; background-color:#E2E2E2;
     width:116px; padding:10px;
@@ -209,13 +258,17 @@
 /* ===================매드 포 갈릭=========================== */
 .web .web_design2 {
     position: relative;
-    margin-bottom:215px;
+    /* margin-bottom:215px; */
 }
 .web .web_design2 img {
-    position:absolute; left:336px; top:435px;
+    /* position:absolute; */
+    /* left:336px; */
+    /* top:435px; */
 }
 .web .web_design2 .ping {
-    position:absolute; left:1099px; top:435px; 
+    /* position:absolute; */
+    /* left:1099px; */
+    /* top:435px; */
     text-align:left;
 }
 .web .web_design2 .ping em {
@@ -278,10 +331,14 @@
 /* =======================핑골프============== */
 .web .web_design3 {}
 .web .web_design3 img {
-    position:absolute; left:336px; top:1475px;
+    /* position:absolute; */
+    /* left:336px; */
+    /* top:1475px; */
 }
 .web .web_design3 .cellfusionC {
-    position:absolute; left:1092px; top:1475px; 
+    /* position:absolute; */
+    /* left:1092px; */
+    /* top:1475px; */
     text-align:left;
 }
 .web .web_design3 .cellfusionC em {
@@ -344,10 +401,14 @@
 /* ============================셀퓨전씨============= */
 .web .web_design4 {}
 .web .web_design4 img {
-    position:absolute; left:336px; top:2039px;
+    /* position:absolute; */
+    /* left:336px; */
+    /* top:2039px; */
 }
 .web .web_design4 .pet_web {
-    position:absolute; left:1092px; top:2039px; 
+    /* position:absolute; */
+    /* left:1092px; */
+    /* top:2039px; */
     text-align:left;
 }
 .web .web_design4 .pet_web em {
@@ -415,13 +476,21 @@
 }
 .design .sns_dg h3 {
     text-align: center;
-    margin-bottom:134px;
-    font-weight:700; font-size:3.75rem;
-    position:absolute; left:780px; right:780px; top:1990px;
+    margin-bottom: 60px;
+    font-weight:700;
+    font-size:3.75rem;
+    /* position:absolute; */
+    /* left:780px; */
+    /* right:780px; */
+    /* top:1990px; */
 }
 .design .sns_dg .sns {
-    width:1400px; margin:0 auto;
-    position:absolute; left:264px; right:264px; top:2190px;
+    width:1400px;
+    margin:0 auto;
+    /* position:absolute; */
+    /* left:264px; */
+    /* right:264px; */
+    /* top:2190px; */
 }
 .design .sns_dg .sns .swiper-wrapper {
     transition-timing-function:linear;
@@ -431,19 +500,29 @@
 }
 .design .sns_dg .sns .s img {
     margin-left:20px;
+    width:100%;
 }
 .design .banner_dg {
-    padding-bottom:230px;
+    padding-bottom: 174px;
     text-align:center;
+    margin-top: 145px;
 }
 .design .banner_dg h3 {
-    margin-bottom:134px;
-    font-weight:700; font-size:3.75rem;
-    position:absolute; left:718px; right:710px; top:2700px;
+    margin-bottom: 64px;
+    font-weight:700;
+    font-size:3.75rem;
+    /* position:absolute; */
+    /* left:718px; */
+    /* right:710px; */
+    /* top:2700px; */
 }
 .design .banner_dg .banner {
-    width:1390px; margin:0 auto;
-    position:absolute; left:269px; right:261px; top:2900px;
+    width:1390px;
+    margin:0 auto;
+    /* position:absolute; */
+    /* left:269px; */
+    /* right:261px; */
+    /* top:2900px; */
 }
 .design .banner_dg .banner .swiper-wrapper {
     transition-timing-function:linear;
@@ -453,22 +532,35 @@
 }
 .design .banner_dg .banner .b img {
     margin-left:20px;
+    width:100%;
 }
 .design .detail_dg {
-    padding-bottom:230px;
+    padding-bottom: 204px;
     text-align:center;
 }
 .design .detail_dg h3 {
-    margin-bottom:134px;
-    font-weight:700; font-size:3.75rem;
-    position:absolute; left:742px; right:734px; top:3400px;
+    margin-bottom: 46px;
+    font-weight:700;
+    font-size:3.75rem;
+    /* position:absolute; */
+    /* left:742px; */
+    /* right:734px; */
+    /* top:3400px; */
 }
 .design .detail_dg p {
-    position:absolute; left:742px; right:734px; top:3510px;
+    /* position:absolute; */
+    /* left:742px; */
+    /* right:734px; */
+    /* top:3510px; */
 }
 .design .detail_dg .detail {
-    width:1390px; margin:0 auto;
-    position:absolute; left:269px; right:261px; top:3600px;
+    width: 800px;
+    height: 600px;
+    margin: 21px auto;
+    /* position:absolute; */
+    /* left:269px; */
+    /* right:261px; */
+    /* top:3600px; */
 }
 .design .detail_dg .detail .swiper-wrapper {
     /* overflow:hidden; */
@@ -477,7 +569,7 @@
     cursor: pointer;
 }
 .design .detail_dg .detail .d img {
-    width:60px;
+    width: 100%;
 }
 .popup_bg {
     position:fixed; left:0; top:0;
@@ -496,11 +588,19 @@
     text-align:center;
 }
 .end h3 {
-    position:absolute; left:799px; right:791px; top:3700px;
-    font-weight:700; font-size:3.75rem;
-    margin-bottom:8px;
+    /* position:absolute; */
+    /* left:799px; */
+    /* right:791px; */
+    /* top:3700px; */
+    font-weight:700;
+    font-size:3.75rem;
+    margin-bottom:12px;
 }
 .end p {
     font-size:1.25rem;
-    position:absolute; left:799px; right:791px; top:3850px;
+    /* position:absolute; */
+    /* left:799px; */
+    /* right:791px; */
+    /* top:3850px; */
+    margin-bottom:200px;
 }
