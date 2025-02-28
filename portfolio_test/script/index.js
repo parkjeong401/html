@@ -3,8 +3,8 @@
     autoplay:{delay:0,},
     loop:true,
     speed:5000,
-    slide:5000,
     slidesPerView:4,
+    spaceBetween:10,
 })
 
 //배너디자인
@@ -12,12 +12,15 @@ const bnrlslide = new Swiper('.banner', {
     autoplay:{delay:0,},
     loop:true,
     speed:5000,
-    slide:5000,
     slidesPerView:3,
+    spaceBetween:10,
 })
 
 //상세디자인
-const detailslide = new Swiper('.detail')
+const detailslide = new Swiper('.detail',{
+    slidesPerView:2,
+    spaceBetween:10,
+})
 
 //출력 및 숨기기
 const popup_bg = document.querySelector('.popup_bg')
@@ -50,7 +53,7 @@ for(let i of detail){
     i.addEventListener('click',()=>{
         popup_bg.style.display = 'block'
         popup_bg.children[0].children[0].src = i.src;
-        popup_bg.children[0].style.width = '900px';
+        popup_bg.children[0].style.width = '800px';
         popup_bg.children[0].style.marginTop = '100px'
         // console.log(i.src)
         // console.log(popup_bg.children[0].children[0])
