@@ -18,6 +18,9 @@ const bnrlslide = new Swiper('.banner', {
 
 //상세디자인
 const detailslide = new Swiper('.detail',{
+    autoplay:{delay:0,},
+    loop:true,
+    speed:5000,
     slidesPerView:2,
     spaceBetween:10,
 })
