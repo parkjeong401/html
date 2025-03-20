@@ -1,5 +1,5 @@
-.title {position: relative; height:100vh; background:#769DF0; padding:100px;}
-.title h1 {
+.title {position: relative; height:100vh; padding:100px 0 0;}
+/* .title h1 {
     width:100%; 
     margin:0 auto;
     font-weight:500;
@@ -13,27 +13,39 @@
 .title h1 span {
     font-weight:400; font-size:2rem;
     margin-top:100px; letter-spacing:-0.02em;
+    color:#fff;
+} */
+.title > img {padding-left: 100px;}
+.title h1 {}
+.title h1 img {
+    margin-top:35px; width:100%;
 }
-.title .personal_contact {
+/* .title .personal_contact {
     text-align:right;
-    margin-top:300px; 
+    margin-top:300px;
+    color:#fff;
 }
 .title .personal_contact em {
     font-weight:600; letter-spacing:-0.02em;
     font-size:1.25rem; line-height:2;
+    color:#fff;
 }
 .title .personal_contact .phone {
     margin-top:6px;
+    color:#fff;
 }
 .title .personal_contact .phone p {
     letter-spacing:-0.02em;
+    color:#fff;
 }
 .title .personal_contact .email {
     margin-top:6px;
+    color:#fff;
 }
 .title .personal_contact .email p {
     letter-spacing:-0.02em;
-}
+    color:#fff;
+} */
 /* ================첫화면=============== */
 .my_profile {
     width:1400px; text-align:center;
@@ -41,10 +53,10 @@
     position: relative;
     display:flex; align-items:center; justify-content:center;
 }
-h2 {
+/* h2 {
     font-weight:700; font-size:2.5rem; text-align:center; padding:50px 0;
     letter-spacing:-0.02em; color:#FC9300;
-}
+} */
 .my_profile .greetings {text-align:left; margin-right:50px;}
 .my_profile .greetings span {
     font-size:3.75rem; font-weight:700;
@@ -56,7 +68,7 @@ h2 {
     text-align:center; transform:translateX(-50%); width:100%;
 }
 .my_profile .greetings p span {
-    font-size:2rem; color:#000000;
+    font-size:2rem; color:#1F2337;
     letter-spacing:-0.02em; 
     font-weight:600;
 }
@@ -68,13 +80,14 @@ h2 {
     width:200px; /*프로필 사진크기*/
     border:1px solid #aaa; border-radius:20px;
 }
-.my_profile .right_c {display:flex; padding-top:300px;}
+.my_profile .right_c {display:flex; padding-top:150px;}
 .my_profile .right_c .l {margin-right:100px;}
 .my_profile .right_c .r {}
 .my_profile .my_info {
     text-align:left; 
 }
-.my_profile .my_info span {
+.my_profile .my_info img {}
+/* .my_profile .my_info span {
     font-weight:600; color:#FC9300;
     font-size:1.25rem;
 }
@@ -83,8 +96,8 @@ h2 {
 }
 .my_profile .my_info .personal_info p {
     margin-top:8px; letter-spacing:-0.02em; line-height:1.4;
-}
-.my_profile .programs {
+} */
+/* .my_profile .programs {
     text-align:left; 
 }
 .my_profile .programs span {
@@ -94,12 +107,13 @@ h2 {
 }
 .my_profile .programs img {
     margin-top:8px;
-}
+} */
 .my_profile .graduate {
     text-align:left;
     margin:0 0 50px;
 }
-.my_profile .graduate span {
+.my_profile .graduate img {}
+/* .my_profile .graduate span {
     font-weight:600; color:#FC9300;
     font-size:1.25rem;
 }
@@ -111,11 +125,12 @@ h2 {
 .my_profile .graduate .completion span {
     font-size:0.94rem; color:#7E7E7E;
     font-weight:400;
-}
+} */
 .my_profile .my_license {
     text-align:left;
 }
-.my_profile .my_license span {
+.my_profile .my_license img {margin-left:88px;}
+/* .my_profile .my_license span {
     font-weight:600; color:#FC9300;
     font-size:1.25rem;
 }
@@ -126,7 +141,7 @@ h2 {
 .my_profile .my_license .personal_license span {
     font-size:0.94rem; color:#7E7E7E;
     font-weight:400;
-}
+} */
 /* =====================프로필===================== */
 .web {
     text-align:center;
